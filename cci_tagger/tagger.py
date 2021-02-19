@@ -107,10 +107,10 @@ class ProcessDatasets(object):
         """
         Initialise the ProcessDatasets class.
 
-        @param checksum (boolean): if True produce a checksum for each file
-        @param use_mapping (boolean): if True use the local mapping to correct
-                use values to match those in the vocab server
-        @param verbose (int): increase output verbosity
+        @param suppress_file_output (boolean): Whether or not to write out moles tags
+        @param json_files (iterable): collection of JSON files to load
+        @param facet_json (string): filepath to JSON file which contains a dump of the facet object
+                to save time when loading the tagger
 
         """
         self.logger = logging.getLogger(__name__)
