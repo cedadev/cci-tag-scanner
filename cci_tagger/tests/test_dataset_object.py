@@ -8,7 +8,7 @@ __copyright__ = 'Copyright 2018 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'richard.d.smith@stfc.ac.uk'
 
-from cci_tagger_json import DatasetJSONMappings
+from json_tagger import DatasetJSONMappings
 from cci_tagger.dataset.dataset import Dataset
 from cci_tagger.facets import Facets
 

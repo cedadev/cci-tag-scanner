@@ -34,7 +34,7 @@ import json
 from cci_tagger.conf.constants import ALLOWED_GLOBAL_ATTRS, SINGLE_VALUE_FACETS
 from cci_tagger.facets import Facets
 from cci_tagger.conf.settings import ESGF_DRS_FILE, MOLES_TAGS_FILE
-from cci_tagger_json import DatasetJSONMappings
+from json_tagger import DatasetJSONMappings
 from cci_tagger.dataset.dataset import Dataset
 from cci_tagger.utils import TaggedDataset
 import logging
@@ -42,6 +42,7 @@ import verboselogs
 import json
 
 verboselogs.install()
+
 
 class ProcessDatasets(object):
     """
