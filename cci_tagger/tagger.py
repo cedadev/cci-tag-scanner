@@ -34,7 +34,7 @@ import json
 from cci_tagger.conf.constants import ALLOWED_GLOBAL_ATTRS, SINGLE_VALUE_FACETS
 from cci_tagger.facets import Facets
 from cci_tagger.conf.settings import ESGF_DRS_FILE, MOLES_TAGS_FILE
-from cci_tagger_json import DatasetJSONMappings
+from json_tagger import DatasetJSONMappings
 from cci_tagger.dataset.dataset import Dataset
 from cci_tagger.utils import TaggedDataset
 import logging
@@ -42,6 +42,7 @@ import verboselogs
 import json
 
 verboselogs.install()
+
 
 class ProcessDatasets(object):
     """
@@ -107,10 +108,10 @@ class ProcessDatasets(object):
         """
         Initialise the ProcessDatasets class.
 
-        @param checksum (boolean): if True produce a checksum for each file
-        @param use_mapping (boolean): if True use the local mapping to correct
-                use values to match those in the vocab server
-        @param verbose (int): increase output verbosity
+        @param suppress_file_output (boolean): Whether or not to write out moles tags
+        @param json_files (iterable): collection of JSON files to load
+        @param facet_json (string): filepath to JSON file which contains a dump of the facet object
+                to save time when loading the tagger
 
         """
         self.logger = logging.getLogger(__name__)
