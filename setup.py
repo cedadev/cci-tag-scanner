@@ -53,6 +53,7 @@ setup(
         'netCDF4',
         'six',
         'verboselogs',
+        'rdflib<5'
 
     ],
 )
