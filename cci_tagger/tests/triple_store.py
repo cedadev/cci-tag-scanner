@@ -32,7 +32,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 from rdflib import ConjunctiveGraph, Graph
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
 
-from cci_tagger.settings import SPARQL_HOST_NAME
+from cci_tagger.conf.settings import SPARQL_HOST_NAME
 
 
 class TripleStoreMC(type):
