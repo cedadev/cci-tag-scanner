@@ -18,7 +18,7 @@ source venv/bin/activate
 Install the latest version of the library
 
 ```bash
-git clone https://github.com/rsmith013/cci-tagger
+git clone https://github.com/cedadev/cci-tagger
 cd cci-tagger
 pip install -r requirements.txt
 pip install -e .

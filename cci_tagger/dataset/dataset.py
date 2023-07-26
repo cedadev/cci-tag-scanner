@@ -69,8 +69,9 @@ class Dataset(object):
 
         # There are no files
         if not file_list:
-            logger.error(f'No files found for {self.id}')
-            return
+            logger.warning(f'No files found for {self.id}')
+            file_tags = self.get_file_tags(filepath=pathlib.Path())
+            self._update_dataset_uris(file_tags)
 
         for file in file_list:
             file_tags = self.get_file_tags(filepath=file)
