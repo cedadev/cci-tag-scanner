@@ -9,7 +9,7 @@ __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'richard.d.smith@stfc.ac.uk'
 
 import unittest
-from cci_tagger.dataset.dataset_tree import DatasetJSONMappings
+from tag_scanner.utils.dataset_jsons import DatasetJSONMappings
 
 
 class TestDatasetTree(unittest.TestCase):

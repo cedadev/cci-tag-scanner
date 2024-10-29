@@ -1,21 +1,20 @@
 # encoding: utf-8
-"""
 
-"""
-__author__ = 'Richard Smith'
-__date__ = '04 Feb 2020'
-__copyright__ = 'Copyright 2018 United Kingdom Research and Innovation'
+__author__ = 'Daniel Westwood'
+__date__ = '29 Oct 2024'
+__copyright__ = 'Copyright 2024 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
-__contact__ = 'richard.d.smith@stfc.ac.uk'
+__contact__ = 'daniel.westwood@stfc.ac.uk'
 
 import pathlib
-from cci_tagger.conf import constants
-from cci_tagger.file_handlers.handler_factory import HandlerFactory
 import re
-from cci_tagger.utils import fpath_as_pathlib
-from cci_tagger.utils.snippets import get_file_subset
 import logging
 import verboselogs
+
+from tag_scanner.conf import constants
+from tag_scanner.file_handlers.handler_factory import HandlerFactory
+from tag_scanner.utils import fpath_as_pathlib
+from tag_scanner.utils.snippets import get_file_subset
 
 verboselogs.install()
 logger = logging.getLogger(__name__)

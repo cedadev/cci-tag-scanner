@@ -34,7 +34,7 @@ import json
 from cci_tagger.conf.constants import ALLOWED_GLOBAL_ATTRS, SINGLE_VALUE_FACETS
 from cci_tagger.facets import Facets
 from cci_tagger.conf.settings import ESGF_DRS_FILE, MOLES_TAGS_FILE
-from json_tagger import DatasetJSONMappings
+from cci_tagger.utils.dataset_jsons import DatasetJSONMappings
 from cci_tagger.dataset.dataset import Dataset
 from cci_tagger.utils import TaggedDataset
 import logging
@@ -117,7 +117,7 @@ class ProcessDatasets(object):
         self.logger = logging.getLogger(__name__)
         self.__suppress_fo = suppress_file_output
 
-        if facet_json:
+        if facet_json and False:
             with open(facet_json, 'r') as reader:
                 self.__facets = Facets.from_json(json.load(reader))
                 print(self.__facets)
