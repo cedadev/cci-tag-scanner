@@ -1,0 +1,43 @@
+[tool.poetry]
+name = "tag_scanner"
+version = "2.1.0"
+description = "This package provides a command line tool moles_esgf_tag to generate dataset tags for both MOLES and ESGF."
+license = "{file='LICENSE'}"
+readme = "README.md"
+
+authors = [
+  "Antony Wilson <antony.wilson@stfc.ac.uk",
+  "Daniel Westwood <daniel.westwood@stfc.ac.uk>",
+  "Richard Smith",
+]
+
+classifiers = [
+    'Intended Audience :: Developers',
+    'License :: OSI Approved :: BSD License',
+    'Operating System :: OS Independent',
+    'Programming Language :: Python',
+    'Programming Language :: Python :: 2.7',
+    'Programming Language :: Python :: 3',
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+verboselogs = "1.7"
+elasticsearch = "7.6.0"
+tqdm = "^4.45.0"
+pytest = "^8.3.3"
+jinja2 = "^3"
+directory-tree = { git = "git@github.com:cedadev/ceda-directory-tree.git", tag = "v1.1.2"}
+sparqlwrapper = "^2.0.0"
+netcdf4 = "^1.7.2"
+six = "^1.16.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+moles_esgf_tag = "tag_scanner.scripts:CCITaggerCommandLineClient.main"
+cci_json_check = "tag_scanner.scripts:TestJSONFile.cmd"
+cci_check_tags = "tag_scanner.scripts.check_tags:main"
+export_facet_json = "tag_scanner.scripts.dump_facet_object:main"
