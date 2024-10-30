@@ -5,11 +5,7 @@ description = "This package provides a command line tool moles_esgf_tag to gener
 license = "{file='LICENSE'}"
 readme = "README.md"
 
-authors = [
-  "Antony Wilson <antony.wilson@stfc.ac.uk",
-  "Daniel Westwood <daniel.westwood@stfc.ac.uk>",
-  "Richard Smith",
-]
+authors = ["Daniel Westwood <daniel.westwood@stfc.ac.uk>", "Antony Wilson <antony.wilson@stfc.ac.uk>"]
 
 classifiers = [
     'Intended Audience :: Developers',
