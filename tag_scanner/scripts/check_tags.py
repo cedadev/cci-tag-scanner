@@ -117,7 +117,7 @@ def main():
     files_index = conf.get('elasticsearch', 'files_index')
 
     # Load template environment
-    env = Environment(loader=PackageLoader("cci_tagger", "templates"))
+    env = Environment(loader=PackageLoader("tag_scanner", "templates"))
     env.trim_blocks = True
     env.lstrip_blocks = True
 

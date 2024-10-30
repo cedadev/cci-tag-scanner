@@ -1,0 +1,23 @@
+{
+	"datasets": [
+		"/neodc/esacci/permafrost/data/active_layer_thickness/L4/area4/pp/v04.0/"
+	],
+	"mappings": {
+		"institution": {
+			"University of Oslo": "Department of GeoSciences, University of Oslo"
+		},
+	"sensor": {
+		"SPOT": "VEGETATION",
+		"AVHRR/3": "AVHRR-3"
+		}
+	},
+	"defaults": {
+		"ecv": "permafrost"
+	},
+  "aggregations": [
+    {
+      "pattern": ".*",
+      "wms":true
+    }
+  ]
+}

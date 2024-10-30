@@ -4,7 +4,7 @@ __copyright__ = 'Copyright 2024 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'daniel.westwood@stfc.ac.uk'
 
-from rdflib import ConjunctiveGraph, Graph
+from rdflib import Dataset, Graph
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
 
 from tag_scanner.conf.settings import SPARQL_HOST_NAME
@@ -38,8 +38,8 @@ class TripleStoreMC(type):
         """
         if self.__graph is None:
             store = SPARQLStore(
-                endpoint='http://%s/sparql' % (SPARQL_HOST_NAME))
-            self.__graph = ConjunctiveGraph(store=store)
+                query_endpoint='http://%s/sparql' % (SPARQL_HOST_NAME))
+            self.__graph = Dataset(store=store)
         return self.__graph
 
     @classmethod
