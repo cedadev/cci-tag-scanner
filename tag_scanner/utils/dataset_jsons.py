@@ -12,6 +12,7 @@ import os
 import json
 from pathlib import Path
 import re
+import glob
 
 import logging
 
@@ -69,9 +70,9 @@ class DatasetJSONMappings:
             else:
 
                 path_root = os.path.abspath(json_tagger_root)
+                json_files = glob.glob(f'{path_root}/*')
 
-                # Generate a list of all JSON files
-                json_files = Path('/').glob(os.path.join(path_root.lstrip('/'), '**/*.json'))
+        print(json_files)
 
         # Read all the json files and build a tree of datasets
         i = 0

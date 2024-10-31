@@ -11,9 +11,11 @@ __contact__ = 'richard.d.smith@stfc.ac.uk'
 import unittest
 from tag_scanner.utils.dataset_jsons import DatasetJSONMappings
 
+PATH = 'permafrost/*'
+JSON_TAGGER_ROOT = 'test_json_files'
 
 class TestDatasetTree(unittest.TestCase):
-    TEST_FILE = './test_json_files'
+    TEST_FILE = JSON_TAGGER_ROOT
     EXPECTED = {
         '/path/1/a/b/c': {
             'dataset': '/path/1',
@@ -102,13 +104,16 @@ class TestDatasetTree(unittest.TestCase):
     }
 
     @classmethod
-    def setUpClass(cls):
-        cls.tree = DatasetJSONMappings(cls.TEST_FILE)
+    def setUpClass(cls, json_tagger_root=None):
+        cls.tree = DatasetJSONMappings(json_tagger_root=json_tagger_root)
+        return cls
 
-    def test_get_dataset(self):
+    def test_get_dataset(self, json_tagger_root=JSON_TAGGER_ROOT):
 
+        self.tree =  DatasetJSONMappings(json_tagger_root=json_tagger_root)
         for path in self.EXPECTED:
             ds = self.tree.get_dataset(path)
+            print(ds, self.EXPECTED[path]['dataset'])
             self.assertEqual(ds, self.EXPECTED[path]['dataset'])
 
     def test_get_user_defined_mapping(self):
@@ -151,4 +156,4 @@ class TestDatasetTree(unittest.TestCase):
             self.assertEqual(realisation, self.EXPECTED[path]['realisation'])
 
 if __name__ == '__main__':
-    unittest.main()
+    TestDatasetTree().test_get_dataset()

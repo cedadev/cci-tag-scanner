@@ -6,13 +6,15 @@ __copyright__ = 'Copyright 2024 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'daniel.westwood@stfc.ac.uk'
 
+import glob
+
 from tag_scanner.utils.dataset_jsons import DatasetJSONMappings
 from tag_scanner.dataset.dataset import Dataset
 from tag_scanner.facets import Facets
 
 
-PATH = 'biomass/ESACCI-BIOMASS-L4-AGB-MERGED-100m-2017-fv1.0.nc'
-JSON_TAGGER_ROOT = ''
+PATH = 'permafrost/*'
+JSON_TAGGER_ROOT = 'test_json_files/'
 
 class TestDatasetObject:
     def test_mappings(self, json_tagger_root=JSON_TAGGER_ROOT):
@@ -22,23 +24,27 @@ class TestDatasetObject:
         mappings = DatasetJSONMappings(json_tagger_root=json_tagger_root)
         facets   = Facets()
 
-        dataset_id = mappings.get_dataset(PATH)
+        for path in glob.glob(PATH)[:1]:
 
-        dataset = Dataset(dataset_id, mappings, facets)
+            dataset_id = mappings.get_dataset(path)
 
-        uris = dataset.get_file_tags(filepath=PATH)
+            dataset = Dataset(dataset_id, mappings, facets)
 
-        tags = facets.process_bag(uris)
+            uris = dataset.get_file_tags(filepath=path)
 
-        drs_facets = dataset.get_drs_labels(tags)
+            tags = facets.process_bag(uris)
 
-        drs = dataset.generate_ds_id(drs_facets, PATH)
+            drs_facets = dataset.get_drs_labels(tags)
 
-        print(uris)
+            drs = dataset.generate_ds_id(drs_facets, path)
 
-        print(tags)
+            print(uris)
 
-        print(drs_facets)
+            print(tags)
 
-        print(drs)
+            print(drs_facets)
 
+            print(drs)
+
+if __name__ == '__main__':
+    TestDatasetObject().test_mappings()

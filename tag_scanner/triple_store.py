@@ -1,40 +1,17 @@
-'''
-BSD Licence
-Copyright (c) 2016, Science & Technology Facilities Council (STFC)
-All rights reserved.
+# encoding: utf-8
 
-Redistribution and use in source and binary forms, with or without
-modification, are permitted provided that the following conditions are met:
+__author__ = 'Daniel Westwood'
+__date__ = '29 Oct 2024'
+__copyright__ = 'Copyright 2024 United Kingdom Research and Innovation'
+__license__ = 'BSD - see LICENSE file in top-level package directory'
+__contact__ = 'daniel.westwood@stfc.ac.uk'
 
-    * Redistributions of source code must retain the above copyright notice,
-        this list of conditions and the following disclaimer.
-    * Redistributions in binary form must reproduce the above copyright notice,
-        this list of conditions and the following disclaimer in the
-        documentation and/or other materials provided with the distribution.
-    * Neither the name of the Science & Technology Facilities Council (STFC)
-        nor the names of its contributors may be used to endorse or promote
-        products derived from this software without specific prior written
-        permission.
-
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
-ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
-ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-'''
-
-from rdflib import ConjunctiveGraph, Graph
+from rdflib import Dataset, Graph
 from rdflib.plugins.stores.sparqlstore import SPARQLStore
 from six import with_metaclass
 from builtins import str
 
-from cci_tagger.conf.settings import SPARQL_HOST_NAME
+from tag_scanner.conf.settings import SPARQL_HOST_NAME
 
 
 class Concept:
@@ -84,10 +61,11 @@ class TripleStoreMC(type):
         Get the graph, creating a new one if necessary.
 
         """
+
         if self.__graph is None:
             store = SPARQLStore(
-                endpoint='http://%s/sparql' % (SPARQL_HOST_NAME))
-            self.__graph = ConjunctiveGraph(store=store)
+                query_endpoint='http://%s/sparql' % (SPARQL_HOST_NAME))
+            self.__graph = Dataset(store=store)
         return self.__graph
 
     @classmethod
