@@ -288,7 +288,7 @@ class Facets(object):
         mapping = self.LABEL_SOURCE.get(facet_l)
 
         if mapping:
-            m = re.match('^_get_(?P<label>\w+)_label$', mapping)
+            m = re.match(r'^_get_(?P<label>\w+)_label$', mapping)
             if m:
                 source = m.group('label')
 
