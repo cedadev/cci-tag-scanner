@@ -69,7 +69,7 @@ class Dataset(object):
         # There are no files
         if not file_list:
             logger.error(f'No files found for {self.id}')
-            return
+            return None, None
 
         for file in file_list:
             file_tags = self.get_file_tags(filepath=file)
