@@ -20,7 +20,6 @@ import json
 
 verboselogs.install()
 
-
 class ProcessDatasets(object):
     """
     This class provides the process_datasets method to process datasets,
