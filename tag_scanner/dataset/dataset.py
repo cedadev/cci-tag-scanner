@@ -17,7 +17,12 @@ from tag_scanner.utils import fpath_as_pathlib
 from tag_scanner.utils.snippets import get_file_subset
 
 verboselogs.install()
+
+from tag_scanner import logstream
+
 logger = logging.getLogger(__name__)
+logger.addHandler(logstream)
+logger.propagate = False
 
 
 class Dataset(object):
