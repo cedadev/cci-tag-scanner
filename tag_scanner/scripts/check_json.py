@@ -11,6 +11,7 @@ import argparse
 import json
 from functools import wraps
 from io import StringIO
+import glob
 
 from tag_scanner.conf.constants import ALL_FACETS
 
@@ -456,6 +457,10 @@ class TestJSONFile:
 
         files = args.json_file
 
+        # Detect non-expanded paths
+        if len(files) == 1:
+            files = glob.glob(files)
+
         print(f'Found {len(files)} files')
 
         TEST_FAILED = False
@@ -463,13 +468,16 @@ class TestJSONFile:
         for file in files:
             print(f'\n\n{TextColours.BOLD}Testing {file}', end=" ")
 
-            tjf = cls(file, verbosity=args.verbose)
-            tjf.run()
-            if not tjf.failed:
-                print(f'{TextColours.OKGREEN}...OK{TextColours.ENDC}')
-            else:
-                TEST_FAILED = True
-                print()
+            try:
+                tjf = cls(file, verbosity=args.verbose)
+                tjf.run()
+                if not tjf.failed:
+                    print(f'{TextColours.OKGREEN}...OK{TextColours.ENDC}')
+                else:
+                    TEST_FAILED = True
+                    print()
+            except FileNotFoundError:
+                print(f'{TextColours.WARNING} FileNotFound {file}')
 
         if TEST_FAILED:
             exit(1)
