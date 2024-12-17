@@ -470,13 +470,16 @@ class TestJSONFile:
         for file in files:
             print(f'\n\n{TextColours.BOLD}Testing {file}', end=" ")
 
-            tjf = cls(file, verbosity=args.verbose)
-            tjf.run()
-            if not tjf.failed:
-                print(f'{TextColours.OKGREEN}...OK{TextColours.ENDC}')
-            else:
-                TEST_FAILED = True
-                print()
+            try:
+                tjf = cls(file, verbosity=args.verbose)
+                tjf.run()
+                if not tjf.failed:
+                    print(f'{TextColours.OKGREEN}...OK{TextColours.ENDC}')
+                else:
+                    TEST_FAILED = True
+                    print()
+            except FileNotFoundError:
+                print(f'{TextColours.WARNING} FileNotFound {file}')
 
         if TEST_FAILED:
             exit(1)

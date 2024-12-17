@@ -16,7 +16,11 @@ import glob
 
 import logging
 
-logger = logging.getLogger()
+from tag_scanner import logstream
+
+logger = logging.getLogger(__name__)
+logger.addHandler(logstream)
+logger.propagate = False
 
 def nested_get(key_list, input_dict):
     """
@@ -70,9 +74,7 @@ class DatasetJSONMappings:
             else:
 
                 path_root = os.path.abspath(json_tagger_root)
-                json_files = glob.glob(f'{path_root}/*')
-
-        print(json_files)
+                json_files = glob.glob(f'{path_root}/**/*.json')
 
         # Read all the json files and build a tree of datasets
         i = 0
@@ -94,7 +96,8 @@ class DatasetJSONMappings:
                     self._json_lookup[dataset] = f
             i += 1
 
-        logging.info(f'Loaded {i} JSON files')
+        logger.info(f'Loading JSONs from {json_tagger_root}')
+        logger.info(f'Loaded {i} JSON files')
 
     def get_dataset(self, path):
         """

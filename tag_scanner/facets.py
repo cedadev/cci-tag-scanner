@@ -13,6 +13,12 @@ from tag_scanner.conf.settings import SPARQL_HOST_NAME
 from tag_scanner.triple_store import TripleStore, Concept
 import re
 
+import logging
+from tag_scanner import logstream
+
+logger = logging.getLogger(__name__)
+logger.addHandler(logstream)
+logger.propagate = False
 
 class Facets(object):
     """
@@ -288,7 +294,7 @@ class Facets(object):
         mapping = self.LABEL_SOURCE.get(facet_l)
 
         if mapping:
-            m = re.match('^_get_(?P<label>\w+)_label$', mapping)
+            m = re.match(r'^_get_(?P<label>\w+)_label$', mapping)
             if m:
                 source = m.group('label')
 

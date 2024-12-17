@@ -13,6 +13,13 @@ from builtins import str
 
 from tag_scanner.conf.settings import SPARQL_HOST_NAME
 
+import logging
+from tag_scanner import logstream
+
+logger = logging.getLogger(__name__)
+logger.addHandler(logstream)
+logger.propagate = False
+
 
 class Concept:
     """
@@ -89,9 +96,12 @@ class TripleStoreMC(type):
         result_set = graph.query(statement)
 
         concepts = {}
+        results = 0
         for result in result_set:
+            results += 1
             concepts[("" + result.label).lower()] = Concept(result.label, result.concept.toPython())
 
+        logger.debug(f'SPARQL Query returned {results} entries for {uri}')
         return concepts
 
     @classmethod

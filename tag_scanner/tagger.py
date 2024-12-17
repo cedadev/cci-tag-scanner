@@ -20,7 +20,6 @@ import json
 
 verboselogs.install()
 
-
 class ProcessDatasets(object):
     """
     This class provides the process_datasets method to process datasets,
@@ -147,17 +146,25 @@ class ProcessDatasets(object):
         dataset_file_mapping = {}
         terms_not_found = set()
 
+        errcount = 0
         for dspath in sorted(datasets):
 
             dataset = self.get_dataset(dspath)
 
             dataset_uris, ds_file_map = dataset.process_dataset(max_file_count)
 
+            if dataset_uris is None:
+                self.logger.error(f'Skipped {dspath} - no associated data identified')
+                errcount += 1
+                continue
+
             self._write_moles_tags(dataset.id, dataset_uris)
 
             dataset_file_mapping.update(ds_file_map)
 
             terms_not_found.update(dataset.not_found_messages)
+
+        self.logger.info(f'{ds_len} Datasets: {errcount} failed')
 
         self._write_json(dataset_file_mapping)
 

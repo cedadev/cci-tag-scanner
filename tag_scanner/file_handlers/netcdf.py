@@ -16,6 +16,13 @@ from tag_scanner.conf.constants import PRODUCT_VERSION, ALLOWED_GLOBAL_ATTRS
 verboselogs.install()
 logger = logging.getLogger(__name__)
 
+import logging
+from tag_scanner import logstream
+
+logger = logging.getLogger(__name__)
+logger.addHandler(logstream)
+logger.propagate = False
+
 
 class NetcdfHandler(FileHandler):
 
@@ -56,7 +63,7 @@ class NetcdfHandler(FileHandler):
     def extract_facet_labels(self, proc_level):
 
         if self.nc_data:
-            logger.verbose(f'GLOBAL ATTRS for {self.filepath}')
+            logger.debug(f'GLOBAL ATTRS for {self.filepath}')
 
             for global_attr in ALLOWED_GLOBAL_ATTRS:
                 if global_attr in self.nc_data.ncattrs():
@@ -65,7 +72,7 @@ class NetcdfHandler(FileHandler):
                     self.tags[global_attr] = attr
 
                     # Verbose logging
-                    logger.verbose(f'{global_attr}={attr}')
+                    logger.debug(f'{global_attr}={attr}')
                 else:
                     logger.warning(f'Required attr {global_attr} not found in {self.filepath}')
 

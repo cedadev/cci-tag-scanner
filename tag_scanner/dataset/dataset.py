@@ -17,7 +17,12 @@ from tag_scanner.utils import fpath_as_pathlib
 from tag_scanner.utils.snippets import get_file_subset
 
 verboselogs.install()
+
+from tag_scanner import logstream
+
 logger = logging.getLogger(__name__)
+logger.addHandler(logstream)
+logger.propagate = False
 
 
 class Dataset(object):
@@ -69,7 +74,7 @@ class Dataset(object):
         # There are no files
         if not file_list:
             logger.error(f'No files found for {self.id}')
-            return
+            return None, None
 
         for file in file_list:
             file_tags = self.get_file_tags(filepath=file)
