@@ -66,6 +66,7 @@ class TripleStoreMC(type):
             store = SPARQLStore(
                 query_endpoint='http://%s/sparql' % (SPARQL_HOST_NAME))
             self.__graph = Dataset(store=store)
+            self.__graph.default_union = True
         return self.__graph
 
     @classmethod

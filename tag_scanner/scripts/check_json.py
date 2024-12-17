@@ -11,6 +11,7 @@ import argparse
 import json
 from functools import wraps
 from io import StringIO
+import glob
 
 from tag_scanner.conf.constants import ALL_FACETS
 
@@ -455,6 +456,12 @@ class TestJSONFile:
         args = parser.parse_args()
 
         files = args.json_file
+
+        print(f'Given {len(files)} as input')
+
+        # Detect non-expanded paths
+        if len(files) == 1 and '*' in files[0]:
+            files = glob.glob(files[0])
 
         print(f'Found {len(files)} files')
 
