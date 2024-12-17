@@ -457,9 +457,11 @@ class TestJSONFile:
 
         files = args.json_file
 
+        print(f'Given {len(files)} as input')
+
         # Detect non-expanded paths
-        if len(files) == 1:
-            files = glob.glob(files)
+        if len(files) == 1 and '*' in files[0]:
+            files = glob.glob(files[0])
 
         print(f'Found {len(files)} files')
 

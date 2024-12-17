@@ -185,18 +185,23 @@ class ProcessDatasets(object):
 
         # Get the dataset
         dataset = self.get_dataset(fpath)
+        self.logger.debug(f'Obtained dataset for {fpath}')
 
         # Get the URIs for the datset
         uris = dataset.get_file_tags(filepath=fpath)
+        self.logger.debug(f'Obtained {len(uris)} uris for {fpath}')
 
         # Turn uris into human readable tags
         tags = self.__facets.process_bag(uris)
+        self.logger.debug(f'Obtained {len(tags)} tags for {fpath}')
 
         # Get DRS labels
         drs_facets = dataset.get_drs_labels(tags)
+        self.logger.debug(f'Obtained {len(drs_facets)} facets for {fpath}')
 
         # Generate DRS id
         drs = dataset.generate_ds_id(drs_facets, fpath)
+        self.logger.debug(f'Obtained drs: {drs} for {fpath}')
 
         return TaggedDataset(drs, tags, uris)
 
