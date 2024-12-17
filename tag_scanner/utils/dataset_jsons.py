@@ -74,7 +74,8 @@ class DatasetJSONMappings:
             else:
 
                 path_root = os.path.abspath(json_tagger_root)
-                json_files = glob.glob(f'{path_root}/**/*.json')
+                # Must use recursive to final all files
+                json_files = glob.glob(f'{path_root}/**/*.json', recursive=True)
 
         # Read all the json files and build a tree of datasets
         i = 0
