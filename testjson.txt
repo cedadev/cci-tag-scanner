@@ -1,0 +1,1032 @@
+10 days,http://vocab.ceda.ac.uk/collection/cci/freq/freq_10day
+13 years,http://vocab.ceda.ac.uk/collection/cci/freq/freq_13yr
+15 days,http://vocab.ceda.ac.uk/collection/cci/freq/freq_15day
+3 hours,http://vocab.ceda.ac.uk/collection/cci/freq/freq_3hr
+5 days,http://vocab.ceda.ac.uk/collection/cci/freq/freq_5day
+5 years,http://vocab.ceda.ac.uk/collection/cci/freq/freq_5yr
+8 days,http://vocab.ceda.ac.uk/collection/cci/freq/freq_8day
+L1,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1
+L2,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level2
+L3,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3
+aai,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aai
+aatsr,http://vocab.ceda.ac.uk/collection/cci/product/prod_aatsr
+aatsr,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_aatsr
+aatsr-envisat-ens,http://vocab.ceda.ac.uk/collection/cci/product/prod_aatsrEns
+aatsr-envisat-ens_annual,http://vocab.ceda.ac.uk/collection/cci/product/prod_aatsrEnsannual
+aatsr-envisat-ens_daily,http://vocab.ceda.ac.uk/collection/cci/product/prod_aatsrEnsdaily
+aatsr-envisat-ens_monthly,http://vocab.ceda.ac.uk/collection/cci/product/prod_aatsrEnsmonthly
+aatsr_envisat,http://vocab.ceda.ac.uk/collection/cci/product/prod_aatsrEn
+abi,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_abi
+above-ground biomass,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_agb
+above-ground biomass,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_biomass
+absolute dynamic topography,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_adt
+absorbing aerosol index,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aai
+absorption by coloured dissolved organic matter,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_adg
+absorption by phytoplankton,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aph
+ace-fts,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_aceFts
+ace_fts_scisat,http://vocab.ceda.ac.uk/collection/cci/product/prod_aFS
+acri-st,http://vocab.ceda.ac.uk/collection/cci/org/org87
+acri-st,http://vocab.ceda.ac.uk/collection/cci/org/org87
+active layer thickness,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_alt
+active,http://vocab.ceda.ac.uk/collection/cci/product/prod_active
+adg,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_adg
+adt,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_adt
+adv,http://vocab.ceda.ac.uk/collection/cci/product/prod_adv
+aer_products,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aerProd
+aergom,http://vocab.ceda.ac.uk/collection/cci/product/prod_aergom
+aerosol optical depth,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aod
+aerosol type,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aty
+aerosol,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_aerosol
+aerosol,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_aerosol
+aex,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aex
+agb,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_agb
+airs,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_airs
+alamo,http://vocab.ceda.ac.uk/collection/cci/product/prod_alamo
+alb,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_alb
+alfred-wegener-institut helmholtz-zentrum für polar- und meeresforschung,http://vocab.ceda.ac.uk/collection/cci/org/org86
+all,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_all
+all,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_all
+alos programme,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_alos_prog
+alos,http://vocab.ceda.ac.uk/collection/cci/platform/plat_alos
+alos,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_alos_prog
+alos-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_alos-2
+alos-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_alos-3
+alt,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_alt
+altika,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_altika
+ami-sar,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_amisar
+ami-scat,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_amiscat
+ami-ws,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_amiscat
+amsr,http://vocab.ceda.ac.uk/collection/cci/product/prod_amsr
+amsr2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_amsr2
+amsr_25kmease2,http://vocab.ceda.ac.uk/collection/cci/product/prod_amsr25E
+amsr_50kmease2,http://vocab.ceda.ac.uk/collection/cci/product/prod_amsr50E
+amsre,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_amsre
+amsu-a,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_amsua
+amsu-b,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_amsub
+aod,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aod
+aopp,http://vocab.ceda.ac.uk/collection/cci/org/org02
+aph,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aph
+aqua,http://vocab.ceda.ac.uk/collection/cci/platform/plat_aqua
+aquarius,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_aquarius
+aristotle university of thessalonikii,http://vocab.ceda.ac.uk/collection/cci/org/org01
+asar,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_asar
+ascat,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ascat
+aster,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_aster
+atmospheric, oceanic and planetary physics, university of oxford,http://vocab.ceda.ac.uk/collection/cci/org/org02
+atot,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_atot
+atsr,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_atsr
+atsr-2,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr2
+atsr-2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_atsr2
+atsr1,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr1
+atsr2,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr2
+atsr2-aatsr,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr2Aatsr
+atsr2-envisat-ens,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr2ens
+atsr2-envisat-ens_annual,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr2ensannual
+atsr2-envisat-ens_daily,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr2ensdaily
+atsr2-envisat-ens_monthly,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr2ensmonthly
+atsr2_ers2,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr2Er2
+atsr_2,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr_2
+atsr_3,http://vocab.ceda.ac.uk/collection/cci/product/prod_atsr3
+aty,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aty
+aura,http://vocab.ceda.ac.uk/collection/cci/platform/plat_aura
+auth,http://vocab.ceda.ac.uk/collection/cci/org/org01
+avhrma,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrMa
+avhrr,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_avhrr
+avhrr-2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_avhrr2
+avhrr-3,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_avhrr3
+avhrr-am,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrrAm
+avhrr-ltdr,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrrLtdr
+avhrr-pm,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrrPm
+avhrr07_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr07G
+avhrr09_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr09G
+avhrr11_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr11G
+avhrr12_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr12G
+avhrr14_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr14G
+avhrr15_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr15G
+avhrr16_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr16G
+avhrr17_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr17G
+avhrr18_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr18G
+avhrr19_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrr19G
+avhrr_merged,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrrMg
+avhrr_metopa,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrMetopA
+avhrr_metopb,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrMetopB
+avhrr_metopc,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrMetopC
+avhrr_noaa,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrrNoaa
+avhrr_noaa10,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa10
+avhrr_noaa11,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa11
+avhrr_noaa12,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa12
+avhrr_noaa14,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa14
+avhrr_noaa16,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa16
+avhrr_noaa17,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa17
+avhrr_noaa18,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa18
+avhrr_noaa19,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa19
+avhrr_noaa6,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa6
+avhrr_noaa7,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa7
+avhrr_noaa8,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa8
+avhrr_noaa9,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrNoaa9
+avhrr_tirosn,http://vocab.ceda.ac.uk/collection/cci/product/prod_AvhrrTirosN
+avhrrmta_g,http://vocab.ceda.ac.uk/collection/cci/product/prod_avhrrmtag
+awi,http://vocab.ceda.ac.uk/collection/cci/org/org86
+ba,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ba
+backscattering by particulate matter,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_v
+bas,http://vocab.ceda.ac.uk/collection/cci/org/org75
+bb,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_bb
+bc,http://vocab.ceda.ac.uk/collection/cci/org/org04
+belgian institute for space aeronomy,http://vocab.ceda.ac.uk/collection/cci/org/org03
+besd,http://vocab.ceda.ac.uk/collection/cci/product/prod_besd
+biomass,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_biomass
+bira,http://vocab.ceda.ac.uk/collection/cci/org/org03
+british antarctic survey,http://vocab.ceda.ac.uk/collection/cci/org/org75
+brockmann consult gmbh,http://vocab.ceda.ac.uk/collection/cci/org/org04
+burned area,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ba
+centre d'etudes spatiales de la biosphère,http://vocab.ceda.ac.uk/collection/cci/org/org102
+centre national d'etudes spatiales,http://vocab.ceda.ac.uk/collection/cci/org/org06
+centre national de la recherche scientific,http://vocab.ceda.ac.uk/collection/cci/org/org05
+cer,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cer
+cesbio,http://vocab.ceda.ac.uk/collection/cci/org/org102
+cfc,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cfc
+cfl,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cfl
+ch4,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ch4
+cha,http://vocab.ceda.ac.uk/collection/cci/org/org07
+chalmers university of technology, göteberg, sweden,http://vocab.ceda.ac.uk/collection/cci/org/org07
+change,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lcchange
+change,http://vocab.ceda.ac.uk/collection/cci/product/prod_change
+chlor_a,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_chlorA
+cl01-a01,http://vocab.ceda.ac.uk/collection/cci/product/prod_cl01A01
+cl01-a01mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_cl01A01Mos
+cl01-a02,http://vocab.ceda.ac.uk/collection/cci/product/prod_cl01A02
+cl01-a02mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_cl01A02Mos
+cl01-a03,http://vocab.ceda.ac.uk/collection/cci/product/prod_cl01A03
+cl01-a03mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_cl01A03Mos
+cl02-a01,http://vocab.ceda.ac.uk/collection/cci/product/prod_CL02A01
+cl02-a01mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_CL02A01Mos
+cl02-a02,http://vocab.ceda.ac.uk/collection/cci/product/prod_CL02A02
+cl02-a02mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_CL02A02Mos
+cl02-a03,http://vocab.ceda.ac.uk/collection/cci/product/prod_CL02A03
+cl02-a03mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_CL02A03Mos
+cld_products,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cldProd
+clim,http://vocab.ceda.ac.uk/collection/cci/freq/freq_clim
+climatology,http://vocab.ceda.ac.uk/collection/cci/freq/freq_clim
+climatology,http://vocab.ceda.ac.uk/collection/cci/product/prod_clim
+cloud cover,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cfc
+cloud effective radius,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cer
+cloud ice water path,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_iwp
+cloud liquid water path,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lwp
+cloud optical thickness,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cot
+cloud top height,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cth
+cloud top pressure,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ctp
+cloud top temperature,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ctt
+cloud,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_cloud
+cloud,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_cloud
+cls,http://vocab.ceda.ac.uk/collection/cci/org/org08
+cnes,http://vocab.ceda.ac.uk/collection/cci/org/org06
+cnrs,http://vocab.ceda.ac.uk/collection/cci/org/org05
+co2,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_co2
+collecte localisation satellites,http://vocab.ceda.ac.uk/collection/cci/org/org08
+column-averaged dry air mole fraction of ch4,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ch4
+column-averaged dry air mole fraction of co2,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_co2
+combined,http://vocab.ceda.ac.uk/collection/cci/product/prod_comb
+combined_adjusted,http://vocab.ceda.ac.uk/collection/cci/product/prod_combAdj
+condition albedo,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_alb
+condition fire (burned area),http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ba
+condition normalised difference vegetation index,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ndvi
+condition snow,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_snow
+condition water (water bodies),http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_wb
+coriolis,http://vocab.ceda.ac.uk/collection/cci/platform/plat_coriolis
+coriolis,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_coriolis_prog
+corrected sea surface height,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssh
+cosmo-skymed,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_csk_prog
+cot,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cot
+cryosat programme,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_cryosat_prog
+cryosat-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_cryosat2
+cryosat-2,http://vocab.ceda.ac.uk/collection/cci/product/prod_CryoSat2
+csk-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_csk1
+csk-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_csk2
+csk-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_csk3
+csk-4,http://vocab.ceda.ac.uk/collection/cci/platform/plat_csk4
+cth,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cth
+ctp,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ctp
+ctt,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ctt
+danish meteorological institute,http://vocab.ceda.ac.uk/collection/cci/org/org77
+day,http://vocab.ceda.ac.uk/collection/cci/freq/freq_day
+department of geography, university of zurich,http://vocab.ceda.ac.uk/collection/cci/org/org09
+department of geosciences, university of oslo,http://vocab.ceda.ac.uk/collection/cci/org/org10
+deutschen zentrums für luft- und raumfahrt, institut für methodik der fernerkundung,http://vocab.ceda.ac.uk/collection/cci/org/org76
+deutscher wetterdienst,http://vocab.ceda.ac.uk/collection/cci/org/org11
+deutsches fernerkundungsdatenzentrum,http://vocab.ceda.ac.uk/collection/cci/org/org93
+deutsches zentrum fuer luft- und raumfahrt,http://vocab.ceda.ac.uk/collection/cci/org/org12
+dfd,http://vocab.ceda.ac.uk/collection/cci/org/org93
+diff,http://vocab.ceda.ac.uk/collection/cci/product/prod_Diff
+dlr,http://vocab.ceda.ac.uk/collection/cci/org/org12
+dlr-imf,http://vocab.ceda.ac.uk/collection/cci/org/org76
+dmi,http://vocab.ceda.ac.uk/collection/cci/org/org77
+dmsp block 5d-1,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_dmsp_5D1
+dmsp block 5d-2,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_dmsp_5D2
+dmsp block 5d-3,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_dmsp_5D3
+dmsp,http://vocab.ceda.ac.uk/collection/cci/platformGrp/plat_dmsp
+dmsp-f01,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F01
+dmsp-f02,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F02
+dmsp-f03,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F03
+dmsp-f04,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F04
+dmsp-f05,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F05
+dmsp-f06,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F06
+dmsp-f07,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F07
+dmsp-f08,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F08
+dmsp-f09,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F09
+dmsp-f10,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F10
+dmsp-f11,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F11
+dmsp-f12,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F12
+dmsp-f13,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F13
+dmsp-f14,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F14
+dmsp-f15,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F15
+dmsp-f16,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F16
+dmsp-f17,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F17
+dmsp-f18,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F18
+dmsp-f19,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_F19
+dmsp-s20,http://vocab.ceda.ac.uk/collection/cci/platform/plat_dmsp_S20
+dtu space,http://vocab.ceda.ac.uk/collection/cci/org/org13
+dtu-gdk,http://vocab.ceda.ac.uk/collection/cci/org/org78
+dtu-mrs,http://vocab.ceda.ac.uk/collection/cci/org/org79
+dtu-s,http://vocab.ceda.ac.uk/collection/cci/org/org13
+dtu-space, department of geodynamics,http://vocab.ceda.ac.uk/collection/cci/org/org78
+dtu-space, department of microwaves and remote sensing,http://vocab.ceda.ac.uk/collection/cci/org/org79
+dwd,http://vocab.ceda.ac.uk/collection/cci/org/org11
+emma,http://vocab.ceda.ac.uk/collection/cci/product/prod_emma
+empa,http://vocab.ceda.ac.uk/collection/cci/org/org57
+enveo,http://vocab.ceda.ac.uk/collection/cci/org/org14
+environmental earth observation it gmbh,http://vocab.ceda.ac.uk/collection/cci/org/org14
+environmental satellite,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_envisat_prog
+envisat,http://vocab.ceda.ac.uk/collection/cci/platform/plat_envisat
+envisat,http://vocab.ceda.ac.uk/collection/cci/product/prod_envisat
+eodc gmbh,http://vocab.ceda.ac.uk/collection/cci/org/org103
+eodc,http://vocab.ceda.ac.uk/collection/cci/org/org103
+eola,http://vocab.ceda.ac.uk/collection/cci/org/org106
+eos,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_eos
+era5_modislst_biascorrected,http://vocab.ceda.ac.uk/collection/cci/product/prod_eraModBias
+ers,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_ers
+ers-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_ers1
+ers-1,http://vocab.ceda.ac.uk/collection/cci/product/prod_ers1
+ers-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_ers2
+ers-2,http://vocab.ceda.ac.uk/collection/cci/product/prod_ers2
+esa,http://vocab.ceda.ac.uk/collection/cci/org/org15
+esacci_sst,http://vocab.ceda.ac.uk/collection/cci/org/org74
+esmr (nimbus-5),http://vocab.ceda.ac.uk/collection/cci/sensor/sens_esmrNim5
+esmr (nimbus-6),http://vocab.ceda.ac.uk/collection/cci/sensor/sens_esmrNim6
+estellus,http://vocab.ceda.ac.uk/collection/cci/org/org99
+etm+,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_etmplus
+european space agency,http://vocab.ceda.ac.uk/collection/cci/org/org15
+feng-yun - 3a,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3A
+feng-yun - 3b,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3B
+feng-yun - 3c,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3C
+feng-yun - 3d,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3D
+feng-yun - 3e,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3E
+feng-yun - 3f,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3F
+feng-yun - 3g,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3G
+feng-yun 3,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_fengyun3
+fengyun,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_fengyun3
+finnish meteorological institute,http://vocab.ceda.ac.uk/collection/cci/org/org16
+fire,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_fire
+fire,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_fire
+fmi,http://vocab.ceda.ac.uk/collection/cci/org/org16
+focal,http://vocab.ceda.ac.uk/collection/cci/product/prod_focal
+freie universitaet berlin,http://vocab.ceda.ac.uk/collection/cci/org/org17
+fub,http://vocab.ceda.ac.uk/collection/cci/org/org17
+fy-3a,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3A
+fy-3b,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3B
+fy-3c,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3C
+fy-3d,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3D
+fy-3e,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3E
+fy-3f,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3F
+fy-3g,http://vocab.ceda.ac.uk/collection/cci/platform/plat_FY-3G
+ga,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ga
+gamma remote sensing,http://vocab.ceda.ac.uk/collection/cci/org/org18
+gamma,http://vocab.ceda.ac.uk/collection/cci/org/org18
+gcom,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_gcom
+gcom-w1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gcomW1
+gcom-w2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gcomW2
+gcom-w3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gcomW3
+geodetic,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_geodetic
+geosat,http://vocab.ceda.ac.uk/collection/cci/platform/plat_geosat
+geus,http://vocab.ceda.ac.uk/collection/cci/org/org19
+gfo,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gfo
+gfo,http://vocab.ceda.ac.uk/collection/cci/product/prod_gfo
+gfo-ra,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_gfora
+ghg,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_ghg
+giuz,http://vocab.ceda.ac.uk/collection/cci/org/org09
+glacier area,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ga
+glacier calving front location,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cfl
+glacier grounding line location,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_gll
+glaciers,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_glaciers
+glaciers,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_glaciers
+glas,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_glas
+gll,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_gll
+global precipitation measurement mission,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_gpm_prog
+global-merged_oi_7day_runningmean_daily_0.25deg,http://vocab.ceda.ac.uk/collection/cci/product/prod_GlobMerg7day
+global-merged_oi_monthly_centred_15day_0.25deg,http://vocab.ceda.ac.uk/collection/cci/product/prod_GlobMergCent
+gmb,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_gmb
+gmi (core),http://vocab.ceda.ac.uk/collection/cci/sensor/sens_gmi
+gmi,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_gmi
+gmpe,http://vocab.ceda.ac.uk/collection/cci/product/prod_gmpe
+gmperean,http://vocab.ceda.ac.uk/collection/cci/product/prod_gmp
+gmv,http://vocab.ceda.ac.uk/collection/cci/org/org20
+gmv,http://vocab.ceda.ac.uk/collection/cci/org/org20
+goes 09 backup,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_09_bk
+goes 10 south america,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_10_SA
+goes 12 s. america,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_12_SA
+goes 12 south america,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_12_SA
+goes 1st gen,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_goes_1st
+goes 2nd gen,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_goes_2nd
+goes 3rd gen,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_goes_3rd
+goes,http://vocab.ceda.ac.uk/collection/cci/platformGrp/plat_goes
+goes-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_01
+goes-10 s. america,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_10_SA
+goes-10,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_10
+goes-11,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_11
+goes-12,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_12
+goes-13,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_13
+goes-14,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_14
+goes-15,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_15
+goes-16,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_16
+goes-17,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_17
+goes-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_02
+goes-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_03
+goes-4,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_04
+goes-5,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_05
+goes-6,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_06
+goes-7,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_07
+goes-8,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_08
+goes-9 backup,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_09_bk
+goes-9,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_09
+goes-imager-12-15,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_goesImager1215
+goes-imager-8-11,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_goesImager811
+goes-r,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_16
+goes-s,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_17
+goes-t,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_T
+goes-u,http://vocab.ceda.ac.uk/collection/cci/platform/plat_goes_U
+gome,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_gome
+gome-2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_gome2
+gomos,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_gomos
+gomos_envisat,http://vocab.ceda.ac.uk/collection/cci/product/prod_gomEn
+gosat,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gosat
+gosat,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gosat-2
+gosat,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_gosat_prog
+gosat,http://vocab.ceda.ac.uk/collection/cci/product/prod_gosat
+gosat-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gosat-2
+gosat-programme,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_gosat_prog
+gpm core observatory,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gpm
+gpm core,http://vocab.ceda.ac.uk/collection/cci/platform/plat_gpm
+grace instrument,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_grace
+grace programme,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_grace_prog
+grace,http://vocab.ceda.ac.uk/collection/cci/platform/plat_grace
+grace,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_grace
+gravimetric mass balance,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_gmb
+greenhouse gases,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_ghg
+ground temperature,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_gtd
+gtd,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_gtd
+guio,http://vocab.ceda.ac.uk/collection/cci/org/org10
+h2o geomatics,http://vocab.ceda.ac.uk/collection/cci/org/org92
+helmholtz-zentrum geesthacht,http://vocab.ceda.ac.uk/collection/cci/org/org21
+himawari,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_himawari
+himawari-6,http://vocab.ceda.ac.uk/collection/cci/platform/plat_himawari-6
+himawari-7,http://vocab.ceda.ac.uk/collection/cci/platform/plat_himawari-7
+hirs,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_hirs
+hirs/2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_hirs2
+hirs/3,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_hirs3
+hirs/4,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_hirs4
+hour,http://vocab.ceda.ac.uk/collection/cci/freq/freq_hr
+hrlc10-a01,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLC10A01
+hrlc10-a02,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLC10A02
+hrlc10-a03,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLC10A03
+hrlc30-a01,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLC30A01
+hrlc30-a02,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLC30A02
+hrlc30-a03,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLC30A03
+hrlcc30-a01,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLCC30A01
+hrlcc30-a02,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLCC30A02
+hrlcc30-a03,http://vocab.ceda.ac.uk/collection/cci/product/prod_HRLCC30A03
+hrs,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_hrs
+hrws-sar,http://vocab.ceda.ac.uk/collection/cci/platform/plat_hrws_sar
+hydro matters,http://vocab.ceda.ac.uk/collection/cci/org/org105
+hygeos,http://vocab.ceda.ac.uk/collection/cci/org/org22
+hzg,http://vocab.ceda.ac.uk/collection/cci/org/org21
+iaa,http://vocab.ceda.ac.uk/collection/cci/org/org29
+iac,http://vocab.ceda.ac.uk/collection/cci/org/org26
+iasi,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_iasi
+iasi-metopa-lmdaero,http://vocab.ceda.ac.uk/collection/cci/product/prod_iasiLMDaero
+iasi-metopa-mapir,http://vocab.ceda.ac.uk/collection/cci/product/prod_iasiMAPIR
+iasi-metopa-ulb,http://vocab.ceda.ac.uk/collection/cci/product/prod_iasiULB
+iasi_metopa-dlr-imars,http://vocab.ceda.ac.uk/collection/cci/product/prod_iasDLRImars
+icare,http://vocab.ceda.ac.uk/collection/cci/org/org23
+ice sheet surface elevation change,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sec
+ice sheet velocity,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_iv
+ice sheets,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_iceSheet
+icesat programme,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_icesat_prog
+icesat,http://vocab.ceda.ac.uk/collection/cci/platform/plat_icesat
+icesat,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_icesat_prog
+icesat-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_icesat-2
+icesheets,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_iceSheet
+icimod,http://vocab.ceda.ac.uk/collection/cci/org/org32
+ies-jrc,http://vocab.ceda.ac.uk/collection/cci/org/org27
+ifremer/cersat,http://vocab.ceda.ac.uk/collection/cci/org/org89
+imager (mtsat-2),http://vocab.ceda.ac.uk/collection/cci/sensor/sens_imagerMtsat2
+imap,http://vocab.ceda.ac.uk/collection/cci/product/prod_imap
+imk,http://vocab.ceda.ac.uk/collection/cci/org/org25
+imkiaa,http://vocab.ceda.ac.uk/collection/cci/org/org24
+ind,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_ind
+indicator,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_ind
+inherent optical properties,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_iop
+inia,http://vocab.ceda.ac.uk/collection/cci/org/org30
+institut de recherche pour le développement,http://vocab.ceda.ac.uk/collection/cci/org/org97
+institut für meterologie und klimaforschung, kit and instituto de astrofisca de andalucia, granada,http://vocab.ceda.ac.uk/collection/cci/org/org24
+institut für meterologie und klimaforschung, kit, karlsruhe,http://vocab.ceda.ac.uk/collection/cci/org/org25
+institute for atmospheric and climate science,http://vocab.ceda.ac.uk/collection/cci/org/org26
+institute for environment and sustainability,http://vocab.ceda.ac.uk/collection/cci/org/org27
+institute of environmental physics,http://vocab.ceda.ac.uk/collection/cci/org/org28
+instituto de astrofisca de andalucia, granada,http://vocab.ceda.ac.uk/collection/cci/org/org29
+instituto nacional de investigacion y tecnologia agraria y alimentaria,http://vocab.ceda.ac.uk/collection/cci/org/org30
+instituto superior de agronomia,http://vocab.ceda.ac.uk/collection/cci/org/org31
+institut francais de recherche pour l'exploitation de la mer / cersat,http://vocab.ceda.ac.uk/collection/cci/org/org89
+international centre for integrated mountain development,http://vocab.ceda.ac.uk/collection/cci/org/org32
+iop,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_iop
+iqix-a01,http://vocab.ceda.ac.uk/collection/cci/product/prod_IQIXA01
+iqix-a01mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_IQIXA01Mos
+iqix-a02,http://vocab.ceda.ac.uk/collection/cci/product/prod_IQIXA02
+iqix-a02mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_IQIXA02Mos
+iqix-a03,http://vocab.ceda.ac.uk/collection/cci/product/prod_IQIXA03
+iqix-a03mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_IQIXA03Mos
+ircdr,http://vocab.ceda.ac.uk/collection/cci/product/prod_ircdr
+ird,http://vocab.ceda.ac.uk/collection/cci/org/org97
+irmgp,http://vocab.ceda.ac.uk/collection/cci/product/prod_irmgp
+isa,http://vocab.ceda.ac.uk/collection/cci/org/org31
+iup,http://vocab.ceda.ac.uk/collection/cci/org/org28
+iv,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_iv
+iwp,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_iwp
+jami,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_jami
+jason,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_jason
+jason-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_jason1
+jason-1,http://vocab.ceda.ac.uk/collection/cci/product/prod_Jason1
+jason-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_jason2
+jason-2,http://vocab.ceda.ac.uk/collection/cci/product/prod_Jason2
+jason-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_jason3
+jason-3,http://vocab.ceda.ac.uk/collection/cci/product/prod_Jason3
+jch,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_jch
+joint cloud physical properties,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_jch
+joint polar satellite system,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_jpss_prog
+jpss,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_jpss_prog
+juelich forschungszentrum,http://vocab.ceda.ac.uk/collection/cci/org/org33
+k_490,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_k_490
+keg,http://vocab.ceda.ac.uk/collection/cci/org/org34
+knmi,http://vocab.ceda.ac.uk/collection/cci/org/org51
+kommission fuer erdmessung und glaziologie,http://vocab.ceda.ac.uk/collection/cci/org/org34
+l0,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level0
+l1,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1
+l1a,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1A
+l1b,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1B
+l1c,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1C
+l2,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level2
+l2p,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level2P
+l3,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3
+l3c,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3C
+l3s,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3S
+l3u,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3U
+l4,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level4
+laboratoire atmospheres, milieux, observations spatiales,http://vocab.ceda.ac.uk/collection/cci/org/org35
+laboratoire d'etudes en géophysique et  océanographie spatiales,http://vocab.ceda.ac.uk/collection/cci/org/org36
+laboratoire d'optique atmosphérique,http://vocab.ceda.ac.uk/collection/cci/org/org37
+laboratoire de meteorologie dynamique,http://vocab.ceda.ac.uk/collection/cci/org/org94
+laboratoire des sciences du climat et l'environement,http://vocab.ceda.ac.uk/collection/cci/org/org38
+lai,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lai
+lakes,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_lakes
+lakes,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_lakes
+land cover change,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lcchange
+land cover classification system,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lccs
+land cover map,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_map
+land cover,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_landCov
+land surface temperature,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lst
+land surface temperature,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_landSurfTemp
+landsat data continuity mission,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_landsat_dcm
+landsat erts,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_1
+landsat,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_landsat
+landsat-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_1
+landsat-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_2
+landsat-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_3
+landsat-4,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_4
+landsat-5,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_5
+landsat-6,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_6
+landsat-7,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_7
+landsat-8,http://vocab.ceda.ac.uk/collection/cci/platform/plat_landsat_8
+latmos,http://vocab.ceda.ac.uk/collection/cci/org/org35
+lc,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_landCov
+lccs,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lccs
+leaf area index,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lai
+legos,http://vocab.ceda.ac.uk/collection/cci/org/org36
+level 0,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level0
+level 1,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1
+level 1a,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1A
+level 1b,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1B
+level 1c,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level1C
+level 2 pre-processing,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level2P
+level 2,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level2
+level 3,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3
+level 3c,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3C
+level 3s,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3S
+level 3u,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level3U
+level 4,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_level4
+lk_products,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lkProds
+lmd,http://vocab.ceda.ac.uk/collection/cci/org/org94
+loa,http://vocab.ceda.ac.uk/collection/cci/org/org37
+locean,http://vocab.ceda.ac.uk/collection/cci/org/org88
+locean,http://vocab.ceda.ac.uk/collection/cci/org/org88
+lp,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lp
+lsce,http://vocab.ceda.ac.uk/collection/cci/org/org38
+lst,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lst
+lst,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_landSurfTemp
+lwp,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lwp
+map,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_map
+map,http://vocab.ceda.ac.uk/collection/cci/product/prod_map
+maps of sea level anomalies,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_msla
+max-planck institute for meteorology,http://vocab.ceda.ac.uk/collection/cci/org/org39
+mean sea level amplitude and phase,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_mslamph
+mean sea level trends,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_msltr
+mean sea level,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_msl
+med_sea,http://vocab.ceda.ac.uk/collection/cci/product/prod_medSea
+merged,http://vocab.ceda.ac.uk/collection/cci/product/prod_merged
+merged_oi_7day_runningmean_daily_25km,http://vocab.ceda.ac.uk/collection/cci/product/prod_merg7dayDaily
+merged_oi_monthly_centred_15day_25km,http://vocab.ceda.ac.uk/collection/cci/product/prod_mergMon15day25km
+meris,http://vocab.ceda.ac.uk/collection/cci/product/prod_merris
+meris,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_meris
+meris_envisat,http://vocab.ceda.ac.uk/collection/cci/product/prod_merris_envisat
+merisaatsr_envisat,http://vocab.ceda.ac.uk/collection/cci/product/prod_meAaEn
+met office hadley centre,http://vocab.ceda.ac.uk/collection/cci/org/org40
+meteo swiss,http://vocab.ceda.ac.uk/collection/cci/org/org41
+meteosat first generation,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_mfg_prog
+meteosat-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_1
+meteosat-10,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_10
+meteosat-11,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_11
+meteosat-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_2
+meteosat-3 (adc),http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_3_adc
+meteosat-3 (x-adc),http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_3_xadc
+meteosat-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_3
+meteosat-4,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_4
+meteosat-5 (iodc),http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_5_iodc
+meteosat-5,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_5
+meteosat-6 (iodc),http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_6_iodc
+meteosat-6,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_6
+meteosat-7 (iodc),http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_7_iodc
+meteosat-7,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_7
+meteosat-8,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_8
+meteosat-9,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_9
+metno,http://vocab.ceda.ac.uk/collection/cci/org/org46
+metop,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_metop
+metop-a,http://vocab.ceda.ac.uk/collection/cci/platform/plat_metOpA
+metop-b,http://vocab.ceda.ac.uk/collection/cci/platform/plat_metOpB
+metop-c,http://vocab.ceda.ac.uk/collection/cci/platform/plat_metOpC
+minute,http://vocab.ceda.ac.uk/collection/cci/freq/feq_min
+mipas,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_mipas
+mipas_envisat,http://vocab.ceda.ac.uk/collection/cci/product/prod_miEn
+miras,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_miras
+modis,http://vocab.ceda.ac.uk/collection/cci/product/prod_modis
+modis,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_modis
+modis_aqua,http://vocab.ceda.ac.uk/collection/cci/product/prod_modAqu
+modis_merged,http://vocab.ceda.ac.uk/collection/cci/product/prod_modMg
+modis_terra,http://vocab.ceda.ac.uk/collection/cci/product/prod_modTe
+modisa,http://vocab.ceda.ac.uk/collection/cci/product/prod_modA
+modislst_cryogrid,http://vocab.ceda.ac.uk/collection/cci/product/prod_modlstCryo
+modist,http://vocab.ceda.ac.uk/collection/cci/product/prod_modT
+mohc,http://vocab.ceda.ac.uk/collection/cci/org/org40
+month,http://vocab.ceda.ac.uk/collection/cci/freq/freq_mon
+mpi-m,http://vocab.ceda.ac.uk/collection/cci/org/org39
+ms_uvai,http://vocab.ceda.ac.uk/collection/cci/product/prod_msUvai
+msaai,http://vocab.ceda.ac.uk/collection/cci/product/prod_msaai
+msg,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_msg
+msg-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_8
+msg-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_9
+msg-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_10
+msg-4,http://vocab.ceda.ac.uk/collection/cci/platform/plat_meteosat_11
+msi (sentinel-2),http://vocab.ceda.ac.uk/collection/cci/sensor/sens_msi
+msi,http://vocab.ceda.ac.uk/collection/cci/product/prod_msi
+msi,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_msi
+msl,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_msl
+msla,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_msla
+mslamph,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_mslamph
+msltr,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_msltr
+mss,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_mss
+mtsat1r,http://vocab.ceda.ac.uk/collection/cci/platform/plat_himawari-6
+mtsat2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_himawari-7
+multi_1d,http://vocab.ceda.ac.uk/collection/cci/product/prod_multi1d
+multi_1m,http://vocab.ceda.ac.uk/collection/cci/product/prod_multi1m
+multiple aerosol products,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aerProd
+multiple cloud products,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_cldProd
+multiple lake products,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lkProds
+multiple products (chla, nlw, iops, etc),http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ocProd
+mviri,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_mviri
+mwri,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_mwri
+mzm,http://vocab.ceda.ac.uk/collection/cci/product/prod_mzm
+n_indian,http://vocab.ceda.ac.uk/collection/cci/product/prod_nInd
+nansen environmental and remote sensing center,http://vocab.ceda.ac.uk/collection/cci/org/org42
+national snow and ice data center,http://vocab.ceda.ac.uk/collection/cci/org/org43
+nbi,http://vocab.ceda.ac.uk/collection/cci/org/org80
+ncc,http://vocab.ceda.ac.uk/collection/cci/org/org100
+ndvi,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ndvi
+ne_atl,http://vocab.ceda.ac.uk/collection/cci/product/prod_neAtl
+nersc,http://vocab.ceda.ac.uk/collection/cci/org/org42
+netherlands institute for space research,http://vocab.ceda.ac.uk/collection/cci/org/org44
+nh,http://vocab.ceda.ac.uk/collection/cci/product/prod_nh
+nh25kmease2,http://vocab.ceda.ac.uk/collection/cci/product/prod_nh25kmease2
+niels bohr institute,http://vocab.ceda.ac.uk/collection/cci/org/org80
+nilu,http://vocab.ceda.ac.uk/collection/cci/org/org45
+nimbus,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_nimbus
+nimbus-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_nimbus1
+nimbus-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_nimbus2
+nimbus-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_nimbus3
+nimbus-4,http://vocab.ceda.ac.uk/collection/cci/platform/plat_nimbus4
+nimbus-5,http://vocab.ceda.ac.uk/collection/cci/platform/plat_nimbus5
+nimbus-6,http://vocab.ceda.ac.uk/collection/cci/platform/plat_nimbus6
+nimbus-7,http://vocab.ceda.ac.uk/collection/cci/platform/plat_nimbus7
+nimbus5_esmr-ease2_nh,http://vocab.ceda.ac.uk/collection/cci/product/prod_nimEsmrNH
+nimbus5_esmr-ease2_sh,http://vocab.ceda.ac.uk/collection/cci/product/prod_nimEsmrSH
+nkua,http://vocab.ceda.ac.uk/collection/cci/org/org60
+nlw,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_nlw
+noaa,http://vocab.ceda.ac.uk/collection/cci/platformGrp/plat_noaa
+noaa-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_1
+noaa-10,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_10
+noaa-11,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_11
+noaa-12,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_12
+noaa-13,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_13
+noaa-14,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_14
+noaa-15,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_15
+noaa-16,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_16
+noaa-17,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_17
+noaa-18,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_18
+noaa-19,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_19
+noaa-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_2
+noaa-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_3
+noaa-3rd,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_noaa_3rd
+noaa-4,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_4
+noaa-4th,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_noaa_4th
+noaa-5,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_5
+noaa-5th,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_noaa_5th
+noaa-6,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_6
+noaa-7,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_7
+noaa-8,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_8
+noaa-9,http://vocab.ceda.ac.uk/collection/cci/platform/plat_noaa_9
+normalised water leaving radiance,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_nlw
+norwegian computing center,http://vocab.ceda.ac.uk/collection/cci/org/org100
+norwegian institute for air research,http://vocab.ceda.ac.uk/collection/cci/org/org45
+norwegian meteorological institute,http://vocab.ceda.ac.uk/collection/cci/org/org46
+norwegian water resources and energy directorate,http://vocab.ceda.ac.uk/collection/cci/org/org47
+np,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_np
+nra,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_nra
+nsidc,http://vocab.ceda.ac.uk/collection/cci/org/org43
+nve,http://vocab.ceda.ac.uk/collection/cci/org/org47
+oc,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_oceanCol
+oc_products,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ocProd
+ocean colour,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_oceanCol
+ocfp,http://vocab.ceda.ac.uk/collection/cci/product/prod_ocfp
+oco,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_oco
+oco-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_oco2
+ocpr,http://vocab.ceda.ac.uk/collection/cci/product/prod_ocpr
+odin,http://vocab.ceda.ac.uk/collection/cci/platform/plat_odin
+odin,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_odin_prog
+olci,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_olci
+oli,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_oli
+omi,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_omi
+opera,http://vocab.ceda.ac.uk/collection/cci/product/prod_opera
+orac,http://vocab.ceda.ac.uk/collection/cci/product/prod_orac
+orbiting carbon observatory,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_oco_prog
+orbview-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_orbview2
+orbview-2,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_orbview2_prog
+osiris,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_osiris
+osiris_odin,http://vocab.ceda.ac.uk/collection/cci/product/prod_osOd
+ostia,http://vocab.ceda.ac.uk/collection/cci/product/prod_ostia
+ozone limb profile,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_lp
+ozone nadir profile,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_np
+ozone total column,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_tc
+ozone,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_ozone
+ozone,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_ozone
+p0dt0h0m1s,http://vocab.ceda.ac.uk/collection/cci/freq/freq_sec
+p0dt0h1m,http://vocab.ceda.ac.uk/collection/cci/freq/feq_min
+p0dt1h,http://vocab.ceda.ac.uk/collection/cci/freq/freq_hr
+p0dt3h,http://vocab.ceda.ac.uk/collection/cci/freq/freq_3hr
+p10d,http://vocab.ceda.ac.uk/collection/cci/freq/freq_10day
+p13y,http://vocab.ceda.ac.uk/collection/cci/freq/freq_13yr
+p15d,http://vocab.ceda.ac.uk/collection/cci/freq/freq_15day
+p1d,http://vocab.ceda.ac.uk/collection/cci/freq/freq_day
+p1m,http://vocab.ceda.ac.uk/collection/cci/freq/freq_mon
+p1y,http://vocab.ceda.ac.uk/collection/cci/freq/freq_yr
+p5d,http://vocab.ceda.ac.uk/collection/cci/freq/freq_5day
+p5y,http://vocab.ceda.ac.uk/collection/cci/freq/freq_5yr
+p7d,http://vocab.ceda.ac.uk/collection/cci/freq/freq_week
+p8d,http://vocab.ceda.ac.uk/collection/cci/freq/freq_8day
+palsar,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_palsar
+palsar-2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_palsar2
+parasol,http://vocab.ceda.ac.uk/collection/cci/platform/plat_parasol
+parasol,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_parasol_prog
+parasol-grasp,http://vocab.ceda.ac.uk/collection/cci/product/prod_parGrasp
+passive,http://vocab.ceda.ac.uk/collection/cci/product/prod_passive
+paul-scherrer-institut,http://vocab.ceda.ac.uk/collection/cci/org/org48
+permafrost extent,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_pfr
+permafrost,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_permafrost
+permafrost,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_permafrost
+pfr,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_pfr
+pft,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_pft
+phytoplankton chlorophyll-a concentration,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_chlorA
+planet labs,http://vocab.ceda.ac.uk/collection/cci/org/org101
+plant functional types,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_pft
+plymouth marine laboratory,http://vocab.ceda.ac.uk/collection/cci/org/org49
+pml,http://vocab.ceda.ac.uk/collection/cci/org/org49
+polar-merged_oi_7day_runningmean_daily_25kmease2-nh,http://vocab.ceda.ac.uk/collection/cci/product/prod_PolMerg7dayNh
+polar-merged_oi_7day_runningmean_daily_25kmease2-sh,http://vocab.ceda.ac.uk/collection/cci/product/prod_PolMerg7daySh
+polar-merged_oi_monthly_centred_15day_25kmease2-nh,http://vocab.ceda.ac.uk/collection/cci/product/prod_PolMergCentNH
+polar-merged_oi_monthly_centred_15day_25kmease2-sh,http://vocab.ceda.ac.uk/collection/cci/product/prod_PolMergCentSH
+polder,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_polder
+poseidon-1,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ssalt
+poseidon-2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_poseidon2
+poseidon-3,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_poseidon3
+poseidon-3b,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_poseidon3b
+poseidon-4,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_poseidon4
+proba,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_proba_prog
+proba-v,http://vocab.ceda.ac.uk/collection/cci/platform/plat_probaV
+project for on-board autonomy,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_proba_prog
+ps01-a01,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS01A01
+ps01-a01mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS01A01Mos
+ps01-a02,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS01A02
+ps01-a02mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS01A02Mos
+ps01-a03,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS01A03
+ps01-a03mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS01A03Mos
+ps02-a01,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS02A01
+ps02-a01mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS02A01Mos
+ps02-a02,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS02A02
+ps02-a02mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS02A02Mos
+ps02-a03,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS02A03
+ps02-a03mosaic,http://vocab.ceda.ac.uk/collection/cci/product/prod_PS02A03Mos
+psi,http://vocab.ceda.ac.uk/collection/cci/org/org48
+ra,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ra
+ra-2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ra2
+radarsat,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_radarsat_prog
+radarsat-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_radarsat2
+radarsat-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_radarsat2
+ral,http://vocab.ceda.ac.uk/collection/cci/org/org52
+rd,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_riverDischarge
+re_ssmi_12.5kmease2-nh,http://vocab.ceda.ac.uk/collection/cci/product/prod_reSSMINH
+re_ssmi_12.5kmease2-sh,http://vocab.ceda.ac.uk/collection/cci/product/prod_reSSMISH
+remote sensing reflectance,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_rrs
+river discharge,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_riverDischarge
+rmib,http://vocab.ceda.ac.uk/collection/cci/org/org50
+royal meteorological institute of belgium,http://vocab.ceda.ac.uk/collection/cci/org/org50
+royal netherlands meteorological institute,http://vocab.ceda.ac.uk/collection/cci/org/org51
+rrs,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_rrs
+rutherford appleton laboratory,http://vocab.ceda.ac.uk/collection/cci/org/org52
+s[&]t,http://vocab.ceda.ac.uk/collection/cci/org/org55
+s_australia,http://vocab.ceda.ac.uk/collection/cci/product/prod_sAust
+sac,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_sac_prog
+sac-d,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sac_d
+sar (radarsat-2),http://vocab.ceda.ac.uk/collection/cci/sensor/sens_sarRadarSat2
+sar-2000,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_sar2000
+sar-c (sentinel-1),http://vocab.ceda.ac.uk/collection/cci/sensor/sens_sarcS1
+sar-x,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_sarX
+saral programme,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_saral_prog
+saral,http://vocab.ceda.ac.uk/collection/cci/platform/plat_saral
+saral,http://vocab.ceda.ac.uk/collection/cci/product/prod_saral
+sask,http://vocab.ceda.ac.uk/collection/cci/org/org67
+satellite orbit frequency,http://vocab.ceda.ac.uk/collection/cci/freq/freq_sat_orb
+satélite de aplicaciones cientificas,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_sac_prog
+scfg,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_scfg
+scfv,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_scfv
+school of earth and environment, university of leeds,http://vocab.ceda.ac.uk/collection/cci/org/org53
+school of geographical sciences, university of bristol,http://vocab.ceda.ac.uk/collection/cci/org/org54
+sciamachy,http://vocab.ceda.ac.uk/collection/cci/product/prod_sciam
+sciamachy,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_sciamachy
+sciamachy_envisat,http://vocab.ceda.ac.uk/collection/cci/product/prod_sciamEn
+science [&] technology as,http://vocab.ceda.ac.uk/collection/cci/org/org55
+scisat,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_scisat_prog
+scisat-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_scisat
+se_asia,http://vocab.ceda.ac.uk/collection/cci/product/prod_seAsia
+sea ice concentration,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sic
+sea ice extent,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sie
+sea ice thickness,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sit
+sea ice,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_seaIce
+sea level anomaly,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sla
+sea level,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_seaLevel
+sea state,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_seaState
+sea surface foundation temperature,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstFnd
+sea surface salinity,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sss
+sea surface salinity,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_salinity
+sea surface skin temperature,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstSkin
+sea surface subskin temperature,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstSubsk
+sea surface temperature,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstInt
+sea surface temperature,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_sst
+sea water temperature,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstDepth
+seaice,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_seaIce
+sealevel,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_seaLevel
+seastar,http://vocab.ceda.ac.uk/collection/cci/platform/plat_orbview2
+seastar,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_orbview2_prog
+seastate,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_seaState
+seasurfacesalinity,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_salinity
+seawifs,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_seaWiFs
+sec,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sec
+second,http://vocab.ceda.ac.uk/collection/cci/freq/freq_sec
+seel,http://vocab.ceda.ac.uk/collection/cci/org/org53
+sentinel-1,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_sentinel1_prog
+sentinel-1a,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel1a
+sentinel-1b,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel1b
+sentinel-2,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_sentinel2_prog
+sentinel-2a,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel2a
+sentinel-2b,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel2b
+sentinel-3,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_sentinel3_prog
+sentinel-3a,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel3a
+sentinel-3b,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel3b
+sentinel-5 precursor,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_s5p_prog
+sentinel-5p,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel5p
+sentinel-6,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_sentinel6_prog
+sentinel-6a,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel6a
+sentinel-6b,http://vocab.ceda.ac.uk/collection/cci/platform/plat_sentinel6b
+seviri,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_seviri
+sgs,http://vocab.ceda.ac.uk/collection/cci/org/org54
+sh,http://vocab.ceda.ac.uk/collection/cci/product/prod_sh
+sh50kmease2,http://vocab.ceda.ac.uk/collection/cci/product/prod_sh50kmease2
+siconc,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sic
+siextent,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sie
+significant wave height,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swh
+siral,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_siral
+sithick,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sit
+sla,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sla
+slstr,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_slstr
+slstra,http://vocab.ceda.ac.uk/collection/cci/product/prod_slstrA
+slstrb,http://vocab.ceda.ac.uk/collection/cci/product/prod_slstrB
+smap,http://vocab.ceda.ac.uk/collection/cci/platform/plat_smap
+smap,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_smap_prog
+smap,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_smap
+smm,http://vocab.ceda.ac.uk/collection/cci/product/prod_smm
+smmr,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_smmr
+smos,http://vocab.ceda.ac.uk/collection/cci/platform/plat_smos
+smr,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_smr
+smr_odin,http://vocab.ceda.ac.uk/collection/cci/product/prod_smrOd
+snow cover fraction - snow on ground,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_scfg
+snow cover fraction - viewable,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_scfv
+snow water equivalent,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swe
+snow,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_snow
+snow,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_snow
+snow,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_snow
+snpp,http://vocab.ceda.ac.uk/collection/cci/platform/plat_snpp
+soil moisture and ocean salinity,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_smos_prog
+soil moisture,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_soilMst
+soil water index degree of saturation absolute,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swis
+soil water index degree of saturation anomalie,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swisa
+soil water index volumetric absolute,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swiv
+soil water index volumetric anomalies,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swiva
+soilmoisture,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_soilMst
+spectral attenuation coefficient for downwelling irradiance,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_k_490
+spot follow-on,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_spot_prog_follow
+spot,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_spot
+spot-1,http://vocab.ceda.ac.uk/collection/cci/platform/plat_spot1
+spot-2,http://vocab.ceda.ac.uk/collection/cci/platform/plat_spot2
+spot-3,http://vocab.ceda.ac.uk/collection/cci/platform/plat_spot3
+spot-4,http://vocab.ceda.ac.uk/collection/cci/platform/plat_spot4
+spot-5,http://vocab.ceda.ac.uk/collection/cci/platform/plat_spot5
+spot-6,http://vocab.ceda.ac.uk/collection/cci/platform/plat_spot6
+spot-7,http://vocab.ceda.ac.uk/collection/cci/platform/plat_spot7
+sr,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sr
+sral,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_sral
+srfp,http://vocab.ceda.ac.uk/collection/cci/product/prod_srfp
+sron,http://vocab.ceda.ac.uk/collection/cci/org/org44
+srpr,http://vocab.ceda.ac.uk/collection/cci/product/prod_srpr
+ssalt,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ssalt
+ssh,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssh
+ssm/i,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ssmI
+ssmi,http://vocab.ceda.ac.uk/collection/cci/product/prod_ssmi
+ssmi,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ssmI
+ssmi/s,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ssmiS
+ssmi_ssmis,http://vocab.ceda.ac.uk/collection/cci/product/prod_ssmiS
+ssmis,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_ssmiS
+ssms,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssms
+ssmsa,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssmsa
+ssmv,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssmv
+ssmva,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssmva
+sss,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sss
+sst,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_sst
+sstdepth,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstDepth
+sstfnd,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstFnd
+sstint,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstInt
+sstskin,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstSkin
+sstsubskin,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sstSubsk
+stratospheric aerosol extinction profile,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_aex
+su,http://vocab.ceda.ac.uk/collection/cci/product/prod_su
+suomi npp,http://vocab.ceda.ac.uk/collection/cci/platform/plat_snpp
+surface reflectance,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_sr
+surface soil moisture degree of saturation absolute,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssms
+surface soil moisture degree of saturation anomalies,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssmsa
+surface soil moisture volumetric absolutes,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssmv
+surface soil moisture volumetric anomalies,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_ssmva
+swansea university,http://vocab.ceda.ac.uk/collection/cci/org/org56
+swe,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swe
+swh,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swh
+swis,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swis
+swisa,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swisa
+swiss federal laboratories for material testing and research,http://vocab.ceda.ac.uk/collection/cci/org/org57
+swiv,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swiv
+swiva,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_swiva
+syn,http://vocab.ceda.ac.uk/collection/cci/product/prod_syn
+tandem-x,http://vocab.ceda.ac.uk/collection/cci/platform/plat_tandem_X
+tanso-cai,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_tansoCai
+tanso-fts,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_tansoFts
+tanso-fts-2,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_tansoFts2
+tc,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_tc
+tcwv,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_tcwv
+tcwv_land_005deg,http://vocab.ceda.ac.uk/collection/cci/product/prod_tcwvLand005
+tcwv_land_05deg,http://vocab.ceda.ac.uk/collection/cci/product/prod_tcwvLand05
+technische universität dresden,http://vocab.ceda.ac.uk/collection/cci/org/org81
+technische universität münchen,http://vocab.ceda.ac.uk/collection/cci/org/org82
+terra,http://vocab.ceda.ac.uk/collection/cci/platform/plat_terra
+terrasar,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_terraSAR
+terrasar-x,http://vocab.ceda.ac.uk/collection/cci/platform/plat_terraSar_X
+the geological survey of denmark and greenland,http://vocab.ceda.ac.uk/collection/cci/org/org19
+tiros-n,http://vocab.ceda.ac.uk/collection/cci/platform/plat_tiros_n
+tirs,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_tirs
+tm,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_tm
+tmi,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_tmi
+toms,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_toms
+topex,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_nra
+topex-poseidon,http://vocab.ceda.ac.uk/collection/cci/product/prod_topexPos
+topex/poseidon,http://vocab.ceda.ac.uk/collection/cci/platform/plat_topexPoseidon
+topex/poseidon,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_topexPoseidon_prog
+total absorption,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_atot
+total backscattering,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_bb
+total column water vapour,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_tcwv
+transmissivity b.v. / vandersat b.v.,http://vocab.ceda.ac.uk/collection/cci/org/org90
+trmm,http://vocab.ceda.ac.uk/collection/cci/platform/plat_trmm
+trmm,http://vocab.ceda.ac.uk/collection/cci/platformProg/plat_trmm_prog
+tropomi,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_tropomi
+tsx-ng,http://vocab.ceda.ac.uk/collection/cci/platform/plat_tsx_ng
+tu wien,http://vocab.ceda.ac.uk/collection/cci/org/org70
+tudr,http://vocab.ceda.ac.uk/collection/cci/org/org81
+tum,http://vocab.ceda.ac.uk/collection/cci/org/org82
+uah,http://vocab.ceda.ac.uk/collection/cci/org/org59
+ucl,http://vocab.ceda.ac.uk/collection/cci/org/org58
+uclon,http://vocab.ceda.ac.uk/collection/cci/org/org83
+ujena,http://vocab.ceda.ac.uk/collection/cci/org/org64
+ul,http://vocab.ceda.ac.uk/collection/cci/org/org66
+ul-cpom,http://vocab.ceda.ac.uk/collection/cci/org/org84
+ul-see,http://vocab.ceda.ac.uk/collection/cci/org/org85
+ulb,http://vocab.ceda.ac.uk/collection/cci/org/org95
+uncert,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_uncert
+uncertainty,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_uncert
+universite catholique de louvain,http://vocab.ceda.ac.uk/collection/cci/org/org58
+universite libre de bruxelles,http://vocab.ceda.ac.uk/collection/cci/org/org95
+university college london,http://vocab.ceda.ac.uk/collection/cci/org/org83
+university of alcala,http://vocab.ceda.ac.uk/collection/cci/org/org59
+university of athens,http://vocab.ceda.ac.uk/collection/cci/org/org60
+university of bern,http://vocab.ceda.ac.uk/collection/cci/org/org98
+university of bremen,http://vocab.ceda.ac.uk/collection/cci/org/org61
+university of cambridge,http://vocab.ceda.ac.uk/collection/cci/org/org62
+university of edinburgh,http://vocab.ceda.ac.uk/collection/cci/org/org63
+university of jena,http://vocab.ceda.ac.uk/collection/cci/org/org64
+university of leeds, centre for polar observation and modelling,http://vocab.ceda.ac.uk/collection/cci/org/org84
+university of leeds, school of earth and environment,http://vocab.ceda.ac.uk/collection/cci/org/org85
+university of leeds,http://vocab.ceda.ac.uk/collection/cci/org/org66
+university of leicester,http://vocab.ceda.ac.uk/collection/cci/org/org65
+university of reading,http://vocab.ceda.ac.uk/collection/cci/org/org91
+university of saskatchewan, canada,http://vocab.ceda.ac.uk/collection/cci/org/org67
+university of trento,http://vocab.ceda.ac.uk/collection/cci/org/org107
+university of york,http://vocab.ceda.ac.uk/collection/cci/org/org68
+university of zurich,http://vocab.ceda.ac.uk/collection/cci/org/org69
+université de toulouse,http://vocab.ceda.ac.uk/collection/cci/org/org96
+unspecified,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_unspecified
+unspecified,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_unspecified
+unspecified,http://vocab.ceda.ac.uk/collection/cci/freq/freq_unspecified
+unspecified,http://vocab.ceda.ac.uk/collection/cci/platform/plat_unspecified
+unspecified,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_unspecified
+unspecified,http://vocab.ceda.ac.uk/collection/cci/procLev/proc_unspecified
+unspecified,http://vocab.ceda.ac.uk/collection/cci/product/prod_unspecified
+unspecified,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_unspecified
+uoy,http://vocab.ceda.ac.uk/collection/cci/org/org68
+uzh,http://vocab.ceda.ac.uk/collection/cci/org/org69
+v,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_v
+various,http://vocab.ceda.ac.uk/collection/cci/product/prod_var
+vegetation parameters,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_vp
+vegetation parameters,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_vegParam
+vegetation,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_vegParam
+vegetation,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_vegetation
+vegetation-p,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_vegetationP
+vienna university of technology,http://vocab.ceda.ac.uk/collection/cci/org/org70
+viirs,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_viirs
+virr (fy-3),http://vocab.ceda.ac.uk/collection/cci/sensor/sens_virr
+virr,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_virr
+vito,http://vocab.ceda.ac.uk/collection/cci/org/org104
+vp_products,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_vp
+vu university amsterdam,http://vocab.ceda.ac.uk/collection/cci/org/org71
+vua,http://vocab.ceda.ac.uk/collection/cci/org/org71
+végétation,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_vegetation
+végétation-p,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_vegetationP
+wafrica,http://vocab.ceda.ac.uk/collection/cci/product/prod_wAfrica
+wageningen university,http://vocab.ceda.ac.uk/collection/cci/org/org72
+water level,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_wl
+water vapour,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_waterVapour
+watervapour,http://vocab.ceda.ac.uk/collection/cci/ecv/cciecv_waterVapour
+wb,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_wb
+week,http://vocab.ceda.ac.uk/collection/cci/freq/freq_week
+wfmd,http://vocab.ceda.ac.uk/collection/cci/product/prod_wfmd
+wgms,http://vocab.ceda.ac.uk/collection/cci/org/org73
+windsat,http://vocab.ceda.ac.uk/collection/cci/sensor/sens_windSat
+wl,http://vocab.ceda.ac.uk/collection/cci/dataType/dtype_wl
+world glacier monitoring service,http://vocab.ceda.ac.uk/collection/cci/org/org73
+year,http://vocab.ceda.ac.uk/collection/cci/freq/freq_yr
