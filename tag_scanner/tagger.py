@@ -12,7 +12,7 @@ from tag_scanner.conf.constants import ALLOWED_GLOBAL_ATTRS, SINGLE_VALUE_FACETS
 from tag_scanner.facets import Facets
 from tag_scanner.conf.settings import ESGF_DRS_FILE, MOLES_TAGS_FILE
 from tag_scanner.utils.dataset_jsons import DatasetJSONMappings
-from tag_scanner.dataset.dataset import Dataset
+from tag_scanner.dataset import Dataset
 from tag_scanner.utils import TaggedDataset
 import logging
 import verboselogs
