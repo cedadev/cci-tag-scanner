@@ -1,8 +1,10 @@
 from tag_scanner.facets import Facets
 
-f1 = Facets()
-f1.to_json('facet_mappings.json')
+class TestJSON:
+    def test_json_basic(self):
+        f1 = Facets()
+        assert len(f1.facets) >= len(f1.FACET_ENDPOINTS)
 
-assert 1==1
-
-print('Done')
+    def test_json_load(self):
+        f1 = Facets.from_json('tag_scanner/tests/facet_mappings.json')
+        assert len(f1.facets) >= len(f1.FACET_ENDPOINTS)

@@ -18,7 +18,8 @@ classifiers = [
 ]
 include = [
     { path = "templates/*.html" },
-    { path = "conf/tag_check.conf" }
+    { path = "conf/tag_check.conf" },
+    { path = "tag_scanner/tests/*"}
 ]
 dependencies = [
     "verboselogs>=1.7",
@@ -29,6 +30,7 @@ dependencies = [
     "numpy (>=1.25,<2.0)",
     "netcdf4 (>=1.7.2,<2.0.0)",
     "six (>=1.16.0,<2.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
 ]
 
 requires-python = ">=3.9,<4"
