@@ -22,4 +22,4 @@ jobs:
         pip3 install .
         pip3 install -r requirements_fix.txt
     - name: Run tests
-      run: poetry run pytest
+      run: pytest
