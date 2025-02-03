@@ -135,6 +135,8 @@ class Facets(object):
             bpl[label] = uri
         self.__facets[BROADER_PROCESSING_LEVEL] = bpl
 
+        self._reverse_facet_mappings(facet=BROADER_PROCESSING_LEVEL)
+
         self.__facets            = self._lower_all_facets(self.__facets)
         self.__reversible_facets = self._lower_all_facets(self.__reversible_facets)
 
@@ -493,13 +495,18 @@ class Facets(object):
             altID = record[altLabel][0]["@value"]
             self.__facets[f'{facet_label}-alt'][altID] = Concept(altID, id)
 
-    def _reverse_facet_mappings(self) -> None:
+    def _reverse_facet_mappings(self, facet: Union[str,None] = None) -> None:
         """
         Reverse the facet mappings so that it can be given a uri and
         return the required tag.
         """
 
-        for facet, records in self.__facets.items():
+        if facet is None:
+            iterable = self.__facets.items()
+        else:
+            iterable = [(facet, self.__facets[facet])]
+
+        for facet, records in iterable:
             reversed = {}
             for k, v in records.items():
                 if isinstance(v, str):
