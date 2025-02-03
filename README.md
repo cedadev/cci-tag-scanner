@@ -18,11 +18,17 @@ source venv/bin/activate
 Install the latest version of the library
 
 ```bash
-git clone https://github.com/rsmith013/cci-tagger
-cd cci-tagger
-pip install -r requirements.txt
+git clone https://github.com/cedadev/cci-tag-scanner
+cd cci-tag-scanner
 pip install -e .
 ```
+
+NOTE: As of 22nd Jan 2025 the `cci-tag-scanner` repository has been upgraded for use with Poetry version 2. This requires the use of an additional `requirements_fix.txt` patch while a solution for poetry dependencies in github is worked on. The above installation MUST be supplemented with:
+
+```bash
+pip install -r requirements_fix.txt
+```
+This is a temporary fix and will be removed when poetry is patched.
 
 ## Command Line Script
 
