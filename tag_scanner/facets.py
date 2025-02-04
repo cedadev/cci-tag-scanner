@@ -10,42 +10,15 @@ from tag_scanner.conf.constants import DATA_TYPE, FREQUENCY, INSTITUTION, PLATFO
     SENSOR, ECV, PLATFORM_PROGRAMME, PLATFORM_GROUP, PROCESSING_LEVEL, \
     PRODUCT_STRING, BROADER_PROCESSING_LEVEL, PRODUCT_VERSION
 from tag_scanner.conf.settings import SPARQL_HOST_NAME
-
-# Removal of the SPARQL Query/Triple Store components
-#from tag_scanner.triple_store import TripleStore, Concept
-
+from tag_scanner.triple_store import TripleStore, Concept
 import re
-import os
-import requests
-import json
 
 import logging
 from tag_scanner import logstream
-from typing import Union
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logstream)
 logger.propagate = False
-
-class Concept:
-    """
-    Storage object for concepts to allow
-    the terms to be reveresed and get the
-    correct tag in return.
-    """
-
-    def __init__(self, tag, uri):
-        self.uri = str(uri)
-        self.tag = str(tag)
-
-    def __repr__(self):
-        return self.uri
-
-    def __dict__(self):
-        return {
-            'uri': self.uri,
-            'tag': self.tag
-        }
 
 class Facets(object):
     """
@@ -56,7 +29,6 @@ class Facets(object):
 
     # URL for the vocab server
     VOCAB_URL = f'http://{SPARQL_HOST_NAME}/scheme/cci'
-    DEFAULT_ENDPOINT = f"https://{SPARQL_HOST_NAME}/ontology/cci/cci-content/cci-ontology.json"
 
     # All the desired facet endpoints
     FACET_ENDPOINTS = {
@@ -87,26 +59,12 @@ class Facets(object):
         SENSOR: '_get_pref_label'
     }
 
-    def __init__(self, facet_dict: dict = None, endpoint: str = None, data: dict = None):
 
-        facet_dict     = facet_dict or self.FACET_ENDPOINTS
-        self._endpoint = endpoint or self.DEFAULT_ENDPOINT
 
-        self._facet_dict = facet_dict
-        self._reversed_facet_dict = dict((v,k) for k,v in facet_dict.items())
+    def __init__(self, from_json=False):
 
-        self._broader  = {}
-        self._narrower = {}
-        self.__facets, self.__reversible_facets   = {},{}
-        for f in self._facet_dict.keys():
-            self.__facets[f] = {}
-            self.__facets[f'{f}-alt'] = {}
-            self.__reversible_facets[f] = {}
-            self.__reversible_facets[f'{f}-alt'] = {}
-
-        if data is not None:
-            self._load_from_json(data)
-            return
+        # a dict of concept schemes
+        self.__facets = {}
 
         # mapping from platform uri to platform programme label
         self.__platform_programme_mappings = {}
@@ -117,56 +75,83 @@ class Facets(object):
         # mapping for process levels
         self.__proc_level_mappings = {}
 
-        # Perform decoding here
-        try:
-            raw_content = requests.get(self._endpoint).json()
-        except:
-            raise ValueError(
-                f'Unable to retrieve JSON content from {self._endpoint}'
-            )
-        
-        self._decode_json(raw_content)
-        self._reverse_facet_mappings()
-        self._map_broad_narrow()
+        # Reversed mapping to allow lookup from uri to tag.
+        self.__reversible_facets = {}
 
-        bpl = {}
-        for uri in set(self.__proc_level_mappings.values()):
-            label = self.__reversible_facets[f'{PROCESSING_LEVEL}-alt'][uri]
-            bpl[label] = uri
-        self.__facets[BROADER_PROCESSING_LEVEL] = bpl
+        if not from_json:
+            for facet, uri in self.FACET_ENDPOINTS.items():
+                self._init_concepts(facet, uri)
 
-        self._reverse_facet_mappings(facet=BROADER_PROCESSING_LEVEL)
+            self._init_proc_level_mappings()
+            self._init_platform_mappings()
+            self._reverse_facet_mappings()
 
-        self.__facets            = self._lower_all_facets(self.__facets)
-        self.__reversible_facets = self._lower_all_facets(self.__reversible_facets)
+    def _init_concepts(self, facet, uri):
 
-        self.__facets = dict(sorted(self.__facets.items()))
-        self.__reversible_facets = dict(sorted(self.__reversible_facets.items()))
+        self.__facets[facet] = TripleStore.get_concepts_in_scheme(uri)
+        self.__facets[f'{facet}-alt'] = TripleStore.get_alt_concepts_in_scheme(uri)
 
-        self.__programme_group_mappings = dict(sorted(self.__programme_group_mappings.items()))
-        self.__proc_level_mappings = dict(sorted(self.__proc_level_mappings.items()))
-        self.__platform_programme_mappings = dict(sorted(self.__platform_programme_mappings.items()))
+    def _init_platform_mappings(self):
+        """
+        Initialise the platform-programme and programme-group mappings.
 
-    @property
-    def facets(self) -> dict:
-        return self.__facets
-    
-    @property
-    def platform_programme_mappings(self) -> dict:
-        return self.__platform_programme_mappings
-    
-    @property
-    def programme_group_mappings(self) -> dict:
-        return self.__programme_group_mappings
-    
-    @property
-    def proc_level_mappings(self) -> dict:
-        return self.__proc_level_mappings
-    
-    @property
-    def reversed_facets(self) -> dict:
-        return self.__reversible_facets
-    
+        Get the hierarchical mappings between programme, platform and group and
+        store them locally.
+
+        """
+        self.__platform_programme_mappings = {}
+        self.__programme_group_mappings = {}
+
+        for platform in self.__facets[PLATFORM].values():
+            program_label, program_uri = TripleStore.get_broader(platform)
+
+            # Get the broader terms for each of the uris in the platform list
+            self.__platform_programme_mappings[platform.uri] = program_label
+
+            # Get group labels from the broader platform uri
+            group_label, _ = TripleStore.get_broader(program_uri)
+
+            if group_label:
+                self.__programme_group_mappings[program_uri] = group_label
+
+    def _init_proc_level_mappings(self):
+        """
+        Initialise the process level mappings.
+
+        Get the hierarchical mappings between process levels and
+        store them locally.
+
+        """
+        self.__proc_level_mappings = {}
+        for proc_level in self.__facets[PROCESSING_LEVEL].values():
+            _, proc_level_uri = TripleStore.get_broader(proc_level)
+
+            if proc_level_uri != '':
+                self.__proc_level_mappings[proc_level.uri] = proc_level_uri
+
+        self.__facets[BROADER_PROCESSING_LEVEL] = {TripleStore.get_alt_label(uri): uri for uri in
+                                                  self.__proc_level_mappings.values()}
+
+    def _reverse_facet_mappings(self):
+        """
+        Reverse the facet mappings so that it can be given a uri and
+        return the required tag.
+        :return:
+        """
+
+        # Reverse main facets
+        for facet in self.__facets:
+
+            reversed = {}
+
+            for k,v in self.__facets[facet].items():
+                if isinstance(v, str):
+                    reversed[v] = k
+                else:
+                    reversed[v.uri] = v.tag
+
+            self.__reversible_facets[facet] = reversed
+
     def get_facet_names(self):
         """
         Get the list of facet names.
@@ -382,10 +367,7 @@ class Facets(object):
 
         return output
 
-    def to_json(self, json_file: Union[str,None] = None) -> Union[dict,None]:
-        """
-        Write current generated outputs to a json file
-        """
+    def to_json(self):
         response = {}
 
         # Get the __facet values
@@ -407,31 +389,12 @@ class Facets(object):
         response['__proc_level_mappings'] = self.__proc_level_mappings
         response['__reversible_facets'] = self.__reversible_facets
 
-        if json_file is not None:
-            with open(json_file,'w') as f:
-                f.write(json.dumps(response))
-            return None
-
         return response
 
     @classmethod
-    def from_json(cls, json_file: Union[str,None] = None) -> object:
-        """
-        Generate the class instance from a json file.
-        """
-        if not os.path.isfile(json_file):
-            raise FileNotFoundError(json_file)
+    def from_json(cls, data):
         
-        with open(json_file) as f:
-            data = json.load(f)
-
-        obj = cls(data=data)
-        return obj
-        
-    def _load_from_json(self, data) -> None:
-        """
-        Extract values from a json file
-        """
+        # Extract the __facet values
         __facet_dict = {}
         for facet, values in data['__facets'].items():
             __facet_dict[facet] = {}
@@ -442,115 +405,14 @@ class Facets(object):
                 else:
                     __facet_dict[facet][label] = Concept(**concept)
 
-        self.__facets = __facet_dict
+        obj = cls(from_json=True)
 
-        self.__platform_programme_mappings = data['__platform_programme_mappings']
-        self.__programme_group_mappings = data['__programme_group_mappings']
-        self.__proc_level_mappings = data['__proc_level_mappings']
-        self.__reversible_facets = data['__reversible_facets']
+        obj.__facets = __facet_dict
 
-    def _decode_json(self, raw_content: dict) -> None:
-        """
-        Decode the json schema passed from the ontology source
-        """
+        # Extract the other attributes
+        obj.__platform_programme_mappings = data['__platform_programme_mappings']
+        obj.__programme_group_mappings = data['__programme_group_mappings']
+        obj.__proc_level_mappings = data['__proc_level_mappings']
+        obj.__reversible_facets = data['__reversible_facets']
 
-        for record in raw_content:
-            in_scheme = "http://www.w3.org/2004/02/skos/core#inScheme"
-
-            id = record["@id"]
-
-            if in_scheme not in record:
-                # Record does not have an 'inScheme' option
-                continue
-
-            facet_label = record[in_scheme][0]["@id"]
-            if facet_label not in self._facet_dict.values():
-                # 'inScheme' ID does not conform to listed facets.
-                continue
-
-            facet_label = self._reversed_facet_dict[facet_label]
-
-            prefLabel = "http://www.w3.org/2004/02/skos/core#prefLabel"
-            altLabel  = "http://www.w3.org/2004/02/skos/core#altLabel"
-
-            broader   = "http://www.w3.org/2004/02/skos/core#broader"
-            narrower  = "http://www.w3.org/2004/02/skos/core#narrower"
-
-            if broader in record:
-                broad_id = record[broader][0]["@id"]
-                self._broader[id] = (facet_label,broad_id)
-
-            if narrower in record:
-                for option in record[narrower]:
-                    self._narrower[option["@id"]] = (id, facet_label)
-
-            for option in record[prefLabel]:
-                prefID = option["@value"]
-                self.__facets[facet_label][prefID] = Concept(prefID, id)
-
-            if altLabel not in record:
-                # No alternative facet label.
-                continue
-
-            altID = record[altLabel][0]["@value"]
-            self.__facets[f'{facet_label}-alt'][altID] = Concept(altID, id)
-
-    def _reverse_facet_mappings(self, facet: Union[str,None] = None) -> None:
-        """
-        Reverse the facet mappings so that it can be given a uri and
-        return the required tag.
-        """
-
-        if facet is None:
-            iterable = self.__facets.items()
-        else:
-            iterable = [(facet, self.__facets[facet])]
-
-        for facet, records in iterable:
-            reversed = {}
-            for k, v in records.items():
-                if isinstance(v, str):
-                    reversed[v] = k
-                else:
-                    reversed[v.uri] = v.tag
-
-            self.__reversible_facets[facet] = reversed
-
-    def _map_broad_narrow(self) -> None:
-        """
-        Map identified broad values to narrow ones.
-        """
-
-        processing_level = 'procLev'
-        platform = 'platform'
-        platform_prog = 'platformProg' 
-
-        for id in self._broader.keys():
-
-            (facet, mapping) = self._broader[id]
-
-            if re.search(processing_level, id):
-                self.__proc_level_mappings[id] = self._narrower[id][0]
-
-            if re.search(platform_prog, id):
-                facet_label = self._narrower[id][1]
-                self.__programme_group_mappings[id] = self.__reversible_facets[facet_label][
-                    mapping
-                ]
-            if re.search(platform, id):
-                facet_label = self._narrower[id][1]
-                self.__platform_programme_mappings[id] = self.__reversible_facets[facet_label][
-                    mapping
-                ]
-
-    def _lower_all_facets(self, facets: dict) -> dict:
-        """
-        Lower-case labels for all facet values."""
-        new_facets = {}
-
-        for facet, fset in facets.items():
-            new_set = {}
-            for label, lset in fset.items():
-                new_set[label.lower()] = lset
-            new_facets[facet] = new_set
-        return new_facets
+        return obj
