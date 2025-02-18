@@ -1,6 +1,7 @@
 # CCI Tagger
 
 ![Static Badge](https://img.shields.io/badge/cci%20tagger%20workflow-8AD6F6)
+![Current Git Release](https://img.shields.io/github/v/release/cedadev/cci-tag-scanner)
 
 ## Overview
 
