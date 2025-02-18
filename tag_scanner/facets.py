@@ -138,7 +138,7 @@ class Facets(object):
         self._reverse_facet_mappings(facet=BROADER_PROCESSING_LEVEL)
 
         self.__facets            = self._lower_all_facets(self.__facets)
-        self.__reversible_facets = self._lower_all_facets(self.__reversible_facets)
+        self.__reversible_facets = self._lower_all_facets(self.__reversible_facets, reverse=True)
 
         self.__facets = dict(sorted(self.__facets.items()))
         self.__reversible_facets = dict(sorted(self.__reversible_facets.items()))
@@ -543,7 +543,7 @@ class Facets(object):
                     mapping
                 ]
 
-    def _lower_all_facets(self, facets: dict) -> dict:
+    def _lower_all_facets(self, facets: dict, reverse: bool = False) -> dict:
         """
         Lower-case labels for all facet values."""
         new_facets = {}
@@ -551,6 +551,9 @@ class Facets(object):
         for facet, fset in facets.items():
             new_set = {}
             for label, lset in fset.items():
-                new_set[label.lower()] = lset
+                if reverse:
+                    new_set[label] = lset.lower()
+                else:
+                    new_set[label.lower()] = lset
             new_facets[facet] = new_set
         return new_facets
