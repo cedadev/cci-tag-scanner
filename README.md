@@ -1,5 +1,7 @@
 # CCI Tagger
 
+![Static Badge](https://img.shields.io/badge/cci%20tagger%20workflow-8AD6F6)
+
 ## Overview
 
 This package provides a command line tool moles_esgf_tag to generate dataset
