@@ -552,7 +552,7 @@ class Facets(object):
             new_set = {}
             for label, lset in fset.items():
                 if reverse:
-                    new_set[label] = lset.lower()
+                    new_set[label] = lset
                 else:
                     new_set[label.lower()] = lset
             new_facets[facet] = new_set
