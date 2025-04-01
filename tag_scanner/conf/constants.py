@@ -19,6 +19,7 @@ PROCESSING_LEVEL = 'processing_level'
 PRODUCT_STRING = 'product_string'
 PRODUCT_VERSION = 'product_version'
 SENSOR = 'sensor'
+PROJECT = 'project'
 
 # Level 2 data is mapped to satellite orbit frequency
 LEVEL_2_FREQUENCY = 'http://vocab.ceda.ac.uk/collection/cci/freq/freq_sat_orb'

@@ -8,7 +8,7 @@ __contact__ = 'daniel.westwood@stfc.ac.uk'
 
 from tag_scanner.conf.constants import DATA_TYPE, FREQUENCY, INSTITUTION, PLATFORM, \
     SENSOR, ECV, PLATFORM_PROGRAMME, PLATFORM_GROUP, PROCESSING_LEVEL, \
-    PRODUCT_STRING, BROADER_PROCESSING_LEVEL, PRODUCT_VERSION
+    PRODUCT_STRING, BROADER_PROCESSING_LEVEL, PRODUCT_VERSION, PROJECT
 from tag_scanner.conf.settings import SPARQL_HOST_NAME
 
 # Removal of the SPARQL Query/Triple Store components
@@ -69,7 +69,8 @@ class Facets(object):
         PROCESSING_LEVEL: f'{VOCAB_URL}/procLev',
         SENSOR: f'{VOCAB_URL}/sensor',
         INSTITUTION: f'{VOCAB_URL}/org',
-        PRODUCT_STRING: f'{VOCAB_URL}/product'
+        PRODUCT_STRING: f'{VOCAB_URL}/product',
+        PROJECT: f'{VOCAB_URL}/project'
     }
 
     LABEL_SOURCE = {
@@ -84,7 +85,8 @@ class Facets(object):
         PROCESSING_LEVEL: '_get_alt_label',
         PRODUCT_STRING: '_get_pref_label',
         PRODUCT_VERSION: None,
-        SENSOR: '_get_pref_label'
+        SENSOR: '_get_pref_label',
+        PROJECT: '_get_pref_label'
     }
 
     def __init__(self, facet_dict: dict = None, endpoint: str = None, data: dict = None):
@@ -118,12 +120,16 @@ class Facets(object):
         self.__proc_level_mappings = {}
 
         # Perform decoding here
-        try:
-            raw_content = requests.get(self._endpoint).json()
-        except:
-            raise ValueError(
-                f'Unable to retrieve JSON content from {self._endpoint}'
-            )
+        if 'https://' in self._endpoint:
+            try:
+                raw_content = requests.get(self._endpoint).json()
+            except:
+                raise ValueError(
+                    f'Unable to retrieve JSON content from {self._endpoint}'
+                )
+        else:
+            with open(self._endpoint) as f:
+                raw_content = json.load(f)
         
         self._decode_json(raw_content)
         self._reverse_facet_mappings()
