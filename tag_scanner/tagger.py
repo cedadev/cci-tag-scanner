@@ -80,7 +80,8 @@ class ProcessDatasets(object):
     __moles_facets = SINGLE_VALUE_FACETS + ALLOWED_GLOBAL_ATTRS
 
     def __init__(self, suppress_file_output=False,
-                 json_files=None, facet_json=None, **kwargs):
+                 json_files=None, facet_json=None, 
+                 ontology_local=None,**kwargs):
         """
         Initialise the ProcessDatasets class.
 
@@ -98,7 +99,7 @@ class ProcessDatasets(object):
                 self.__facets = Facets.from_json(json.load(reader))
                 print(self.__facets)
         else:
-            self.__facets = Facets()
+            self.__facets = Facets(endpoint=ontology_local)
 
         self.__file_drs = None
         self.__file_csv = None
