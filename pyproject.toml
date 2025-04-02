@@ -1,6 +1,6 @@
 [project]
 name = "tag-scanner"
-version = "2.2.3"
+version = "2.2.4"
 description = "This package provides a command line tool moles_esgf_tag to generate dataset tags for both MOLES and ESGF."
 license = "BSD 3"
 readme = "README.md"
@@ -31,7 +31,7 @@ dependencies = [
     "netcdf4 (>=1.7.2,<2.0.0)",
     "six (>=1.16.0,<2.0.0)",
     "requests (>=2.32.3,<3.0.0)",
-#    "directory-tree @ https://github.com/cedadev/ceda-directory-tree.git"
+    "ceda-directory-tree (>=1.2.0)"
 ]
 
 requires-python = ">=3.9,<4"

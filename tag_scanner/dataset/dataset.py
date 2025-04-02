@@ -254,7 +254,7 @@ class Dataset(object):
         uri_bag = {}
 
         # Filename facets
-        for facet in [constants.PROCESSING_LEVEL, constants.ECV, constants.DATA_TYPE, constants.PRODUCT_STRING]:
+        for facet in [constants.PROCESSING_LEVEL, constants.ECV, constants.PROJECT, constants.DATA_TYPE, constants.PRODUCT_STRING]:
             # Get the terms
             terms = mapped_labels.get(facet)
 
@@ -373,6 +373,7 @@ class Dataset(object):
         """
         return {
             constants.PROCESSING_LEVEL: file_segments[2].split('_')[0],
+            constants.PROJECT: file_segments[2].split('_')[1],
             constants.ECV: file_segments[2].split('_')[1],
             constants.DATA_TYPE: file_segments[3],
             constants.PRODUCT_STRING: file_segments[4]
@@ -392,6 +393,7 @@ class Dataset(object):
         """
         return {
             constants.PROCESSING_LEVEL: file_segments[2],
+            constants.PROJECT: file_segments[1],
             constants.ECV: file_segments[1],
             constants.DATA_TYPE: file_segments[3],
             constants.PRODUCT_STRING: file_segments[4]

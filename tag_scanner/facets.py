@@ -56,7 +56,7 @@ class Facets(object):
 
     # URL for the vocab server
     VOCAB_URL = f'http://{SPARQL_HOST_NAME}/scheme/cci'
-    DEFAULT_ENDPOINT = f"https://{SPARQL_HOST_NAME}/ontology/cci/cci-content/cci-ontology.json"
+    DEFAULT_ENDPOINT = f"http://{SPARQL_HOST_NAME}/ontology/cci/cci-content/cci-ontology.json"
 
     # All the desired facet endpoints
     FACET_ENDPOINTS = {
