@@ -2,6 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/cci%20tagger%20workflow-8AD6F6)
 ![Current Git Release](https://img.shields.io/github/v/release/cedadev/cci-tag-scanner)
+[![PyPI version](https://badge.fury.io/py/cci-tag-scanner.svg)](https://pypi.python.org/pypi/cci-tag-scanner/)
 
 ## Overview
 
