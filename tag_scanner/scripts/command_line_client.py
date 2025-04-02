@@ -13,12 +13,16 @@ import sys
 import time
 import logging
 import verboselogs
+import os
 
 from tag_scanner.conf.settings import ERROR_FILE, LOG_FORMAT
 from tag_scanner.tagger import ProcessDatasets
 
 verboselogs.install()
 logger = logging.getLogger()
+
+if not os.path.isfile(ERROR_FILE):
+    os.system(f'touch {ERROR_FILE}')
 
 # Set up ERROR file log handler
 fh = logging.FileHandler(ERROR_FILE)
@@ -122,6 +126,13 @@ class CCITaggerCommandLineClient(object):
             help='how many .nc files to look at per dataset',
             type=int, default=0
         )
+
+        parser.add_argument(
+            '--ontology',
+            help='Path to local ontology file',
+            type=str, default=None
+        )
+        
         parser.add_argument(
             '-v', '--verbose', action='count',
             help='increase output verbosity',
@@ -130,17 +141,6 @@ class CCITaggerCommandLineClient(object):
 
         args = parser.parse_args()
         datasets = None
-
-        # Set logging level
-        logger.setLevel(get_logging_level(args.verbose))
-
-        # Set up console logger
-        ch = logging.StreamHandler()
-        ch.setLevel(logger.level)
-        ch.setFormatter(LOG_FORMATTER)
-
-        logger.addHandler(ch)
-
 
         start_time = time.strftime("%H:%M:%S")
 
@@ -163,15 +163,15 @@ class CCITaggerCommandLineClient(object):
                     datasets.extend(json_data["datasets"])
 
         # Print start time based on verbosity
-        if logger.level <= logging.INFO:
-            print(f"\n{start_time} STARTED")
-            if args.dataset:
-                print(f'Processing {args.dataset}')
+        logger.info(f"{start_time} STARTED")
+        if args.dataset:
+            logger.info(f'Processing {args.dataset}')
 
         return datasets, args
 
     @classmethod
     def main(cls):
+
         start_time = datetime.now()
 
         # Get the command line arguments
@@ -179,7 +179,7 @@ class CCITaggerCommandLineClient(object):
 
         # Quit of there are no datasets
         if not datasets:
-            print('You have not provided any datasets')
+            logger.warning('You have not provided any datasets')
             sys.exit(0)
 
         if args.json_file:
@@ -187,16 +187,17 @@ class CCITaggerCommandLineClient(object):
         else:
             json_file = None
 
-        pds = ProcessDatasets(json_files=json_file)
+        logger.info('Starting dataset process')
+        pds = ProcessDatasets(json_files=json_file, ontology_local=args.ontology)
         pds.process_datasets(datasets, args.file_count)
 
         if logger.level <= logging.INFO:
-            print(f'\n{time.strftime("%H:%M:%S")} FINISHED\n\n')
+            logger.info(f'{time.strftime("%H:%M:%S")} FINISHED\n\n')
             end_time = datetime.now()
             time_diff = end_time - start_time
             hours, remainder = divmod(time_diff.seconds, 3600)
             minutes, seconds = divmod(remainder, 60)
-            print(f'Time taken {hours:02d}:{minutes:02d}:{seconds:02d}')
+            logger.info(f'Time taken {hours:02d}:{minutes:02d}:{seconds:02d}')
 
         exit(0)
 
