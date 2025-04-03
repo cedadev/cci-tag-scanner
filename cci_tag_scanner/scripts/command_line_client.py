@@ -15,8 +15,8 @@ import logging
 import verboselogs
 import os
 
-from tag_scanner.conf.settings import ERROR_FILE, LOG_FORMAT
-from tag_scanner.tagger import ProcessDatasets
+from cci_tag_scanner.conf.settings import ERROR_FILE, LOG_FORMAT
+from cci_tag_scanner.tagger import ProcessDatasets
 
 verboselogs.install()
 logger = logging.getLogger()

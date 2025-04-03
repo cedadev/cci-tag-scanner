@@ -6,13 +6,13 @@ __copyright__ = 'Copyright 2024 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'daniel.westwood@stfc.ac.uk'
 
-from tag_scanner.conf.constants import DATA_TYPE, FREQUENCY, INSTITUTION, PLATFORM, \
+from cci_tag_scanner.conf.constants import DATA_TYPE, FREQUENCY, INSTITUTION, PLATFORM, \
     SENSOR, ECV, PLATFORM_PROGRAMME, PLATFORM_GROUP, PROCESSING_LEVEL, \
     PRODUCT_STRING, BROADER_PROCESSING_LEVEL, PRODUCT_VERSION, PROJECT
-from tag_scanner.conf.settings import SPARQL_HOST_NAME
+from cci_tag_scanner.conf.settings import SPARQL_HOST_NAME
 
 # Removal of the SPARQL Query/Triple Store components
-#from tag_scanner.triple_store import TripleStore, Concept
+#from cci_tag_scanner.triple_store import TripleStore, Concept
 
 import re
 import os
@@ -20,7 +20,7 @@ import requests
 import json
 
 import logging
-from tag_scanner import logstream
+from cci_tag_scanner import logstream
 from typing import Union
 
 logger = logging.getLogger(__name__)

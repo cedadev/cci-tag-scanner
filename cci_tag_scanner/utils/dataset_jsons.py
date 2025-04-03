@@ -16,7 +16,7 @@ import glob
 
 import logging
 
-from tag_scanner import logstream
+from cci_tag_scanner import logstream
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logstream)

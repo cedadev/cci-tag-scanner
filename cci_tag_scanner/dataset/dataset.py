@@ -11,14 +11,14 @@ import re
 import logging
 import verboselogs
 
-from tag_scanner.conf import constants
-from tag_scanner.file_handlers.handler_factory import HandlerFactory
-from tag_scanner.utils import fpath_as_pathlib
-from tag_scanner.utils.snippets import get_file_subset
+from cci_tag_scanner.conf import constants
+from cci_tag_scanner.file_handlers.handler_factory import HandlerFactory
+from cci_tag_scanner.utils import fpath_as_pathlib
+from cci_tag_scanner.utils.snippets import get_file_subset
 
 verboselogs.install()
 
-from tag_scanner import logstream
+from cci_tag_scanner import logstream
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logstream)

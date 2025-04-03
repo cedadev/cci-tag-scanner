@@ -9,7 +9,7 @@ __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'richard.d.smith@stfc.ac.uk'
 
 import unittest
-from tag_scanner.utils.dataset_jsons import DatasetJSONMappings
+from cci_tag_scanner.utils.dataset_jsons import DatasetJSONMappings
 
 PATH = 'permafrost/*'
 JSON_TAGGER_ROOT = 'test_json_files'
