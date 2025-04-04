@@ -120,7 +120,7 @@ class Facets(object):
         self.__proc_level_mappings = {}
 
         # Perform decoding here
-        if 'https://' in self._endpoint:
+        if self._endpoint.startswith('http'):
             try:
                 raw_content = requests.get(self._endpoint).json()
             except:
@@ -128,8 +128,13 @@ class Facets(object):
                     f'Unable to retrieve JSON content from {self._endpoint}'
                 )
         else:
-            with open(self._endpoint) as f:
-                raw_content = json.load(f)
+            if os.path.isfile(self._endpoint):
+                with open(self._endpoint) as f:
+                    raw_content = json.load(f)
+            else:
+                raise IOError(
+                    f'Specified endpoint - {self._endpoint} unreachable.'
+                )
         
         self._decode_json(raw_content)
         self._reverse_facet_mappings()
