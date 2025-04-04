@@ -8,12 +8,12 @@ __contact__ = 'daniel.westwood@stfc.ac.uk'
 
 import json
 
-from tag_scanner.conf.constants import ALLOWED_GLOBAL_ATTRS, SINGLE_VALUE_FACETS
-from tag_scanner.facets import Facets
-from tag_scanner.conf.settings import ESGF_DRS_FILE, MOLES_TAGS_FILE
-from tag_scanner.utils.dataset_jsons import DatasetJSONMappings
-from tag_scanner.dataset import Dataset
-from tag_scanner.utils import TaggedDataset
+from cci_tag_scanner.conf.constants import ALLOWED_GLOBAL_ATTRS, SINGLE_VALUE_FACETS
+from cci_tag_scanner.facets import Facets
+from cci_tag_scanner.conf.settings import ESGF_DRS_FILE, MOLES_TAGS_FILE
+from cci_tag_scanner.utils.dataset_jsons import DatasetJSONMappings
+from cci_tag_scanner.dataset import Dataset
+from cci_tag_scanner.utils import TaggedDataset
 import logging
 import verboselogs
 import json
@@ -80,7 +80,8 @@ class ProcessDatasets(object):
     __moles_facets = SINGLE_VALUE_FACETS + ALLOWED_GLOBAL_ATTRS
 
     def __init__(self, suppress_file_output=False,
-                 json_files=None, facet_json=None, **kwargs):
+                 json_files=None, facet_json=None, 
+                 ontology_local=None,**kwargs):
         """
         Initialise the ProcessDatasets class.
 
@@ -98,7 +99,7 @@ class ProcessDatasets(object):
                 self.__facets = Facets.from_json(json.load(reader))
                 print(self.__facets)
         else:
-            self.__facets = Facets()
+            self.__facets = Facets(endpoint=ontology_local)
 
         self.__file_drs = None
         self.__file_csv = None

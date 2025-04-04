@@ -7,7 +7,7 @@ __copyright__ = 'Copyright 2018 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'richard.d.smith@stfc.ac.uk'
 
-from directory_tree import DatasetNode
+from ceda_directory_tree import DatasetNode
 import os
 import json
 from pathlib import Path
@@ -16,7 +16,7 @@ import glob
 
 import logging
 
-from tag_scanner import logstream
+from cci_tag_scanner import logstream
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logstream)

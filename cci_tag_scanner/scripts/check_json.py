@@ -13,7 +13,7 @@ from functools import wraps
 from io import StringIO
 import glob
 
-from tag_scanner.conf.constants import ALL_FACETS
+from cci_tag_scanner.conf.constants import ALL_FACETS
 
 
 class TextColours:

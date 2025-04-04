@@ -8,7 +8,7 @@ __contact__ = 'daniel.westwood@stfc.ac.uk'
 import argparse
 import json
 
-from tag_scanner.facets import Facets
+from cci_tag_scanner.facets import Facets
 
 
 def get_args():

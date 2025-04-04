@@ -8,9 +8,9 @@ __contact__ = 'daniel.westwood@stfc.ac.uk'
 
 import glob
 
-from tag_scanner.utils.dataset_jsons import DatasetJSONMappings
-from tag_scanner.dataset.dataset import Dataset
-from tag_scanner.facets import Facets
+from cci_tag_scanner.utils.dataset_jsons import DatasetJSONMappings
+from cci_tag_scanner.dataset.dataset import Dataset
+from cci_tag_scanner.facets import Facets
 
 
 PATH = 'permafrost/*'
