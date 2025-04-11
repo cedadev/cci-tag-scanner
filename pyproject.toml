@@ -1,6 +1,6 @@
 [project]
 name = "cci-tag-scanner"
-version = "2.3.0"
+version = "2.3.1"
 description = "This package provides a command line tool moles_esgf_tag to generate dataset tags for both MOLES and ESGF."
 license = "BSD 3"
 readme = "README.md"
@@ -45,7 +45,7 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [project.scripts]
-moles_esgf_tag = "tag_scanner.scripts:CCITaggerCommandLineClient.main"
-cci_json_check = "tag_scanner.scripts:TestJSONFile.cmd"
-cci_check_tags = "tag_scanner.scripts.check_tags:main"
-export_facet_json = "tag_scanner.scripts.dump_facet_object:main"
+moles_esgf_tag = "cci_tag_scanner.scripts:CCITaggerCommandLineClient.main"
+cci_json_check = "cci_tag_scanner.scripts:TestJSONFile.cmd"
+cci_check_tags = "cci_tag_scanner.scripts.check_tags:main"
+export_facet_json = "cci_tag_scanner.scripts.dump_facet_object:main"
