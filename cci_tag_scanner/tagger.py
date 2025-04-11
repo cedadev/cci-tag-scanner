@@ -195,10 +195,12 @@ class ProcessDatasets(object):
         # Turn uris into human readable tags
         tags = self.__facets.process_bag(uris)
         self.logger.debug(f'Obtained {len(tags)} tags for {fpath}')
+        self.logger.info(tags)
 
         # Get DRS labels
         drs_facets = dataset.get_drs_labels(tags)
         self.logger.debug(f'Obtained {len(drs_facets)} facets for {fpath}')
+        self.logger.info(drs_facets)
 
         # Generate DRS id
         drs = dataset.generate_ds_id(drs_facets, fpath)
