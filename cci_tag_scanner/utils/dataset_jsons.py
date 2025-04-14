@@ -50,6 +50,7 @@ class DatasetJSONMappings:
         # A mapping between the datasets and the filepath to the JSON file
         # containing the mappings
         self._json_lookup = {}
+        self._partial_jsons = {}
 
         # Place to cache the loaded mappings from the JSON files once they are required
         # in the processing
@@ -88,17 +89,28 @@ class DatasetJSONMappings:
                     print(f'Error loading {f}: {e}')
                     continue
 
-                for dataset in data.get('datasets',[]):
+            for dataset in data.get('datasets',[]):
 
-                    # Strip trailing slash. Needed to make sure tree search works
-                    dataset = dataset.rstrip('/')
+                # Strip trailing slash. Needed to make sure tree search works
+                dataset = dataset.rstrip('/')
 
-                    self._dataset_tree.add_child(dataset)
+                self._dataset_tree.add_child(dataset)
+                if 'partial' in f:
+                    self._partial_jsons[dataset] = f
+                else:
                     self._json_lookup[dataset] = f
             i += 1
 
+        j = 0
+        # Recombine partials if needed
+        for dataset, pfile in self._partial_jsons.items():
+            if dataset not in self._json_lookup:
+                self._json_lookup[dataset] = pfile
+                j += 1
+
         logger.info(f'Loading JSONs from {json_tagger_root}')
         logger.info(f'Loaded {i} JSON files')
+        logger.info(f'Loaded {j} partial JSON files')
 
     def get_dataset(self, path):
         """
@@ -122,7 +134,6 @@ class DatasetJSONMappings:
         """
 
         data = self.load_mapping(dataset)
-        self.logger.info(f'Loaded mappings: {data.get("mappings", {})}')
 
         return data.get('mappings', {})
 
