@@ -197,9 +197,6 @@ class ProcessDatasets(object):
         # Tags returned do not give the correct product string. 
         # Next check URIs and the facets themselves.
 
-        with open('/datasets/local_cache.json','w') as f:
-            f.write(json.dumps(self.__facets.__facets))
-
         # Turn uris into human readable tags
         tags = self.__facets.process_bag(uris)
         self.logger.debug(f'Obtained {len(tags)} tags for {fpath}')
