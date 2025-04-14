@@ -191,16 +191,21 @@ class ProcessDatasets(object):
         # Get the URIs for the datset
         uris = dataset.get_file_tags(filepath=fpath)
         self.logger.debug(f'Obtained {len(uris)} uris for {fpath}')
+        self.logger.info(f'URIs: {uris}')
+
+        # 11/04/25 - product_string bug
+        # Tags returned do not give the correct product string. 
+        # Next check URIs and the facets themselves.
 
         # Turn uris into human readable tags
         tags = self.__facets.process_bag(uris)
         self.logger.debug(f'Obtained {len(tags)} tags for {fpath}')
-        self.logger.info(tags)
+        self.logger.info(f'tags: {tags}')
 
         # Get DRS labels
         drs_facets = dataset.get_drs_labels(tags)
         self.logger.debug(f'Obtained {len(drs_facets)} facets for {fpath}')
-        self.logger.info(drs_facets)
+        self.logger.info(f'facets: {drs_facets}')
 
         # Generate DRS id
         drs = dataset.generate_ds_id(drs_facets, fpath)

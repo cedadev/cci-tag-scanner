@@ -184,20 +184,27 @@ class Dataset(object):
 
         # Get default tags
         file_tags = self.dataset_defaults.copy()
-
+        logger.info(f'DEFAULTS: {file_tags}')
         # Get tags from filepath
         tags_from_filename = self._parse_file_name(filepath)
         file_tags.update(tags_from_filename)
 
+        logger.info(f'FILENAME: {tags_from_filename}')
+
         # Get tags from file metadata
         tags_from_metadata = self._scan_file(filepath, file_tags)
+        logger.info(f'META: {tags_from_metadata}')
 
         # Process file tags from the metadata for multivalues
         processed_labels = self._process_file_attributes(tags_from_metadata)
         file_tags.update(processed_labels)
 
+        logger.info(f'Pre-mapping: {file_tags}')
+
         # Apply mappings
         mapped_values = self._apply_mapping(file_tags)
+        logger.info(f'Post-mapping: {mapped_values}')
+
 
         # Apply any overrides
         mapped_values = self._apply_overrides(mapped_values)
