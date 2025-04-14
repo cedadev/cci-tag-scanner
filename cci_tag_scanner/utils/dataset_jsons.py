@@ -122,6 +122,7 @@ class DatasetJSONMappings:
         """
 
         data = self.load_mapping(dataset)
+        self.logger.info(f'Loaded mappings: {data.get("mappings", {})}')
 
         return data.get('mappings', {})
 
@@ -137,6 +138,7 @@ class DatasetJSONMappings:
         mapping_file = self._json_lookup.get(dataset)
 
         if mapping_file:
+            self.logger.info(f'Identified mapping file: {mapping_file}')
 
             json_data = self._user_json_cache.get(dataset)
 
