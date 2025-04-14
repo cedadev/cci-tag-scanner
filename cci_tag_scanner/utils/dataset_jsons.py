@@ -149,7 +149,7 @@ class DatasetJSONMappings:
         mapping_file = self._json_lookup.get(dataset)
 
         if mapping_file:
-            self.logger.info(f'Identified mapping file: {mapping_file}')
+            logger.info(f'Identified mapping file: {mapping_file}')
 
             json_data = self._user_json_cache.get(dataset)
 
