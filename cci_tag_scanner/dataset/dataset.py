@@ -73,8 +73,7 @@ class Dataset(object):
 
         # There are no files
         if not file_list:
-            logger.error(f'No files found for {self.id}')
-            return None, None
+            raise FileNotFoundError(f'No files found for {self.id}')
 
         for file in file_list:
             file_tags = self.get_file_tags(filepath=file)
@@ -104,10 +103,7 @@ class Dataset(object):
 
             if not facet_value:
                 MISSING_VALUES = True
-                if filepath.endswith(('.nc','.prj','.shp','.shx')):
-                    logger.error(f'Missing DRS facet: {facet} in {self.id} for file: {filepath}')
-                else:
-                    logger.warning(f'Missing DRS facet: {facet} in {self.id} for file: {filepath}')
+                logger.warning(f'Missing DRS facet: {facet} in {self.id} for file: {filepath}')
 
 
             else:
@@ -565,7 +561,7 @@ class Dataset(object):
         file_segments = fpath.name.split('-')
 
         if len(file_segments) < 5:
-            logger.error(f'Invalid filename format in dataset: {self.id} for file {fpath.name}')
+            logger.warning(f'Invalid filename format in dataset: {self.id} for file {fpath.name}')
             return {}
 
         if file_segments[1] == self.ESACCI:
@@ -575,7 +571,7 @@ class Dataset(object):
             return self._get_data_from_filename2(file_segments)
 
         # There was an error, unable to extract any tags
-        logger.error(f'Invalid filename format in dataset: {self.id} for file {fpath.name}')
+        logger.warning(f'Invalid filename format in dataset: {self.id} for file {fpath.name}')
         return {}
 
     def _process_file_attributes(self, file_attributes):
@@ -610,7 +606,7 @@ class Dataset(object):
                 if isinstance(attr, str):
                     bits = re.split(r'[;,]{1}', attr)
                 else:
-                    logger.error(f'Could not process attribute from {global_attr} in {self.id}. Got {attr}, expected string or list')
+                    logger.warning(f'Could not process attribute from {global_attr} in {self.id}. Got {attr}, expected string or list')
 
             # Deal with multiplatforms
             if global_attr is constants.PLATFORM:
