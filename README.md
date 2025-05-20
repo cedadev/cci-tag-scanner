@@ -4,6 +4,10 @@
 ![Current Git Release](https://img.shields.io/github/v/release/cedadev/cci-tag-scanner)
 [![PyPI version](https://badge.fury.io/py/cci-tag-scanner.svg)](https://pypi.python.org/pypi/cci-tag-scanner/)
 
+## CEDA Dependencies
+
+![Static Badge](https://img.shields.io/badge/elasticsearch%20v8-3BBEB1)
+
 ## Overview
 
 This package provides a command line tool moles_esgf_tag to generate dataset
