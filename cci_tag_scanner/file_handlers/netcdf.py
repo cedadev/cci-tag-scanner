@@ -11,13 +11,13 @@ import logging
 import verboselogs
 
 from .base import FileHandler
-from tag_scanner.conf.constants import PRODUCT_VERSION, ALLOWED_GLOBAL_ATTRS
+from cci_tag_scanner.conf.constants import PRODUCT_VERSION, ALLOWED_GLOBAL_ATTRS
 
 verboselogs.install()
 logger = logging.getLogger(__name__)
 
 import logging
-from tag_scanner import logstream
+from cci_tag_scanner import logstream
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logstream)

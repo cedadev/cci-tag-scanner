@@ -7,7 +7,7 @@ __copyright__ = 'Copyright 2018 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'richard.d.smith@stfc.ac.uk'
 
-from directory_tree import DatasetNode
+from ceda_directory_tree import DatasetNode
 import os
 import json
 from pathlib import Path
@@ -16,7 +16,7 @@ import glob
 
 import logging
 
-from tag_scanner import logstream
+from cci_tag_scanner import logstream
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logstream)
@@ -50,6 +50,7 @@ class DatasetJSONMappings:
         # A mapping between the datasets and the filepath to the JSON file
         # containing the mappings
         self._json_lookup = {}
+        self._partial_jsons = {}
 
         # Place to cache the loaded mappings from the JSON files once they are required
         # in the processing
@@ -88,17 +89,28 @@ class DatasetJSONMappings:
                     print(f'Error loading {f}: {e}')
                     continue
 
-                for dataset in data.get('datasets',[]):
+            for dataset in data.get('datasets',[]):
 
-                    # Strip trailing slash. Needed to make sure tree search works
-                    dataset = dataset.rstrip('/')
+                # Strip trailing slash. Needed to make sure tree search works
+                dataset = dataset.rstrip('/')
 
-                    self._dataset_tree.add_child(dataset)
+                self._dataset_tree.add_child(dataset)
+                if 'partial' in f:
+                    self._partial_jsons[dataset] = f
+                else:
                     self._json_lookup[dataset] = f
             i += 1
 
+        j = 0
+        # Recombine partials if needed
+        for dataset, pfile in self._partial_jsons.items():
+            if dataset not in self._json_lookup:
+                self._json_lookup[dataset] = pfile
+                j += 1
+
         logger.info(f'Loading JSONs from {json_tagger_root}')
         logger.info(f'Loaded {i} JSON files')
+        logger.info(f'Loaded {j} partial JSON files')
 
     def get_dataset(self, path):
         """
@@ -137,6 +149,7 @@ class DatasetJSONMappings:
         mapping_file = self._json_lookup.get(dataset)
 
         if mapping_file:
+            logger.info(f'Identified mapping file: {mapping_file}')
 
             json_data = self._user_json_cache.get(dataset)
 

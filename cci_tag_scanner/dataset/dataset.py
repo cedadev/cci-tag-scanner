@@ -11,14 +11,14 @@ import re
 import logging
 import verboselogs
 
-from tag_scanner.conf import constants
-from tag_scanner.file_handlers.handler_factory import HandlerFactory
-from tag_scanner.utils import fpath_as_pathlib
-from tag_scanner.utils.snippets import get_file_subset
+from cci_tag_scanner.conf import constants
+from cci_tag_scanner.file_handlers.handler_factory import HandlerFactory
+from cci_tag_scanner.utils import fpath_as_pathlib
+from cci_tag_scanner.utils.snippets import get_file_subset
 
 verboselogs.install()
 
-from tag_scanner import logstream
+from cci_tag_scanner import logstream
 
 logger = logging.getLogger(__name__)
 logger.addHandler(logstream)
@@ -73,8 +73,7 @@ class Dataset(object):
 
         # There are no files
         if not file_list:
-            logger.error(f'No files found for {self.id}')
-            return None, None
+            raise FileNotFoundError(f'No files found for {self.id}')
 
         for file in file_list:
             file_tags = self.get_file_tags(filepath=file)
@@ -104,10 +103,7 @@ class Dataset(object):
 
             if not facet_value:
                 MISSING_VALUES = True
-                if filepath.endswith(('.nc','.prj','.shp','.shx')):
-                    logger.error(f'Missing DRS facet: {facet} in {self.id} for file: {filepath}')
-                else:
-                    logger.warning(f'Missing DRS facet: {facet} in {self.id} for file: {filepath}')
+                logger.warning(f'Missing DRS facet: {facet} in {self.id} for file: {filepath}')
 
 
             else:
@@ -184,20 +180,27 @@ class Dataset(object):
 
         # Get default tags
         file_tags = self.dataset_defaults.copy()
-
+        logger.info(f'DEFAULTS: {file_tags}')
         # Get tags from filepath
         tags_from_filename = self._parse_file_name(filepath)
         file_tags.update(tags_from_filename)
 
+        logger.info(f'FILENAME: {tags_from_filename}')
+
         # Get tags from file metadata
         tags_from_metadata = self._scan_file(filepath, file_tags)
+        logger.info(f'META: {tags_from_metadata}')
 
         # Process file tags from the metadata for multivalues
         processed_labels = self._process_file_attributes(tags_from_metadata)
         file_tags.update(processed_labels)
 
+        logger.info(f'Pre-mapping: {file_tags}')
+
         # Apply mappings
         mapped_values = self._apply_mapping(file_tags)
+        logger.info(f'Post-mapping: {mapped_values}')
+
 
         # Apply any overrides
         mapped_values = self._apply_overrides(mapped_values)
@@ -254,7 +257,7 @@ class Dataset(object):
         uri_bag = {}
 
         # Filename facets
-        for facet in [constants.PROCESSING_LEVEL, constants.ECV, constants.DATA_TYPE, constants.PRODUCT_STRING]:
+        for facet in [constants.PROCESSING_LEVEL, constants.ECV, constants.PROJECT, constants.DATA_TYPE, constants.PRODUCT_STRING]:
             # Get the terms
             terms = mapped_labels.get(facet)
 
@@ -373,6 +376,7 @@ class Dataset(object):
         """
         return {
             constants.PROCESSING_LEVEL: file_segments[2].split('_')[0],
+            constants.PROJECT: file_segments[2].split('_')[1],
             constants.ECV: file_segments[2].split('_')[1],
             constants.DATA_TYPE: file_segments[3],
             constants.PRODUCT_STRING: file_segments[4]
@@ -392,6 +396,7 @@ class Dataset(object):
         """
         return {
             constants.PROCESSING_LEVEL: file_segments[2],
+            constants.PROJECT: file_segments[1],
             constants.ECV: file_segments[1],
             constants.DATA_TYPE: file_segments[3],
             constants.PRODUCT_STRING: file_segments[4]
@@ -556,7 +561,7 @@ class Dataset(object):
         file_segments = fpath.name.split('-')
 
         if len(file_segments) < 5:
-            logger.error(f'Invalid filename format in dataset: {self.id} for file {fpath.name}')
+            logger.warning(f'Invalid filename format in dataset: {self.id} for file {fpath.name}')
             return {}
 
         if file_segments[1] == self.ESACCI:
@@ -566,7 +571,7 @@ class Dataset(object):
             return self._get_data_from_filename2(file_segments)
 
         # There was an error, unable to extract any tags
-        logger.error(f'Invalid filename format in dataset: {self.id} for file {fpath.name}')
+        logger.warning(f'Invalid filename format in dataset: {self.id} for file {fpath.name}')
         return {}
 
     def _process_file_attributes(self, file_attributes):
@@ -601,7 +606,7 @@ class Dataset(object):
                 if isinstance(attr, str):
                     bits = re.split(r'[;,]{1}', attr)
                 else:
-                    logger.error(f'Could not process attribute from {global_attr} in {self.id}. Got {attr}, expected string or list')
+                    logger.warning(f'Could not process attribute from {global_attr} in {self.id}. Got {attr}, expected string or list')
 
             # Deal with multiplatforms
             if global_attr is constants.PLATFORM:

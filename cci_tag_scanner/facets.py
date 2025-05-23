@@ -6,13 +6,13 @@ __copyright__ = 'Copyright 2024 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'daniel.westwood@stfc.ac.uk'
 
-from tag_scanner.conf.constants import DATA_TYPE, FREQUENCY, INSTITUTION, PLATFORM, \
+from cci_tag_scanner.conf.constants import DATA_TYPE, FREQUENCY, INSTITUTION, PLATFORM, \
     SENSOR, ECV, PLATFORM_PROGRAMME, PLATFORM_GROUP, PROCESSING_LEVEL, \
-    PRODUCT_STRING, BROADER_PROCESSING_LEVEL, PRODUCT_VERSION
-from tag_scanner.conf.settings import SPARQL_HOST_NAME
+    PRODUCT_STRING, BROADER_PROCESSING_LEVEL, PRODUCT_VERSION, PROJECT
+from cci_tag_scanner.conf.settings import SPARQL_HOST_NAME
 
 # Removal of the SPARQL Query/Triple Store components
-#from tag_scanner.triple_store import TripleStore, Concept
+#from cci_tag_scanner.triple_store import TripleStore, Concept
 
 import re
 import os
@@ -20,7 +20,7 @@ import requests
 import json
 
 import logging
-from tag_scanner import logstream
+from cci_tag_scanner import logstream
 from typing import Union
 
 logger = logging.getLogger(__name__)
@@ -56,7 +56,7 @@ class Facets(object):
 
     # URL for the vocab server
     VOCAB_URL = f'http://{SPARQL_HOST_NAME}/scheme/cci'
-    DEFAULT_ENDPOINT = f"https://{SPARQL_HOST_NAME}/ontology/cci/cci-content/cci-ontology.json"
+    DEFAULT_ENDPOINT = f"http://{SPARQL_HOST_NAME}/ontology/cci/cci-content/cci-ontology.json"
 
     # All the desired facet endpoints
     FACET_ENDPOINTS = {
@@ -69,7 +69,8 @@ class Facets(object):
         PROCESSING_LEVEL: f'{VOCAB_URL}/procLev',
         SENSOR: f'{VOCAB_URL}/sensor',
         INSTITUTION: f'{VOCAB_URL}/org',
-        PRODUCT_STRING: f'{VOCAB_URL}/product'
+        PRODUCT_STRING: f'{VOCAB_URL}/product',
+        PROJECT: f'{VOCAB_URL}/project'
     }
 
     LABEL_SOURCE = {
@@ -84,7 +85,8 @@ class Facets(object):
         PROCESSING_LEVEL: '_get_alt_label',
         PRODUCT_STRING: '_get_pref_label',
         PRODUCT_VERSION: None,
-        SENSOR: '_get_pref_label'
+        SENSOR: '_get_pref_label',
+        PROJECT: '_get_pref_label'
     }
 
     def __init__(self, facet_dict: dict = None, endpoint: str = None, data: dict = None):
@@ -118,12 +120,21 @@ class Facets(object):
         self.__proc_level_mappings = {}
 
         # Perform decoding here
-        try:
-            raw_content = requests.get(self._endpoint).json()
-        except:
-            raise ValueError(
-                f'Unable to retrieve JSON content from {self._endpoint}'
-            )
+        if self._endpoint.startswith('http'):
+            try:
+                raw_content = requests.get(self._endpoint).json()
+            except:
+                raise ValueError(
+                    f'Unable to retrieve JSON content from {self._endpoint}'
+                )
+        else:
+            if os.path.isfile(self._endpoint):
+                with open(self._endpoint) as f:
+                    raw_content = json.load(f)
+            else:
+                raise IOError(
+                    f'Specified endpoint - {self._endpoint} unreachable.'
+                )
         
         self._decode_json(raw_content)
         self._reverse_facet_mappings()

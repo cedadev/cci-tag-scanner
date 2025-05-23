@@ -12,7 +12,7 @@ from pydoc import locate
 class HandlerFactory(object):
 
     HANDLER_MAP = {
-        '.nc': 'tag_scanner.file_handlers.netcdf.NetcdfHandler'
+        '.nc': 'cci_tag_scanner.file_handlers.netcdf.NetcdfHandler'
     }
 
     @classmethod
