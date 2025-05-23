@@ -44,7 +44,7 @@ class Dataset:
 
     def __init__(self, result, conf):
         source = result['_source']
-
+        # Updated conf for multiple hosts
         hosts = conf.get('elasticsearch', 'hosts')
         self.files_index = conf.get('elasticsearch', 'files_index')
         self.es = Elasticsearch(hosts=hosts, verify_certs=False)
