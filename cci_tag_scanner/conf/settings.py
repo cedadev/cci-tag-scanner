@@ -6,7 +6,7 @@ __copyright__ = 'Copyright 2024 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'daniel.westwood@stfc.ac.uk'
 
-SPARQL_HOST_NAME = 'vocab.ceda.ac.uk'
+SPARQL_HOST_NAME = 'vocab-server-main.rancher2.130.246.130.221.nip.io'
 
 ESGF_DRS_FILE = 'esgf_drs.json'
 MOLES_TAGS_FILE = 'moles_tags.csv'
