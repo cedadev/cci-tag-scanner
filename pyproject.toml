@@ -1,6 +1,6 @@
 [project]
 name = "cci-tag-scanner"
-version = "2.4.0"
+version = "2.5.0"
 description = "This package provides a command line tool moles_esgf_tag to generate dataset tags for both MOLES and ESGF."
 license = "BSD 3"
 readme = "README.md"
