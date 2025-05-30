@@ -55,8 +55,8 @@ class Facets(object):
     """
 
     # URL for the vocab server
-    VOCAB_URL = f'http://{SPARQL_HOST_NAME}/scheme/cci'
-    DEFAULT_ENDPOINT = f"http://{SPARQL_HOST_NAME}/ontology/cci/cci-content/cci-ontology.json"
+    VOCAB_URL = f'https://{SPARQL_HOST_NAME}/scheme/cci'
+    DEFAULT_ENDPOINT = f"https://{SPARQL_HOST_NAME}/ontology/cci/cci-content/cci-ontology.json"
 
     # All the desired facet endpoints
     FACET_ENDPOINTS = {
@@ -122,7 +122,7 @@ class Facets(object):
         # Perform decoding here
         if self._endpoint.startswith('http'):
             try:
-                raw_content = requests.get(self._endpoint).json()
+                raw_content = requests.get(self._endpoint, verify=False).json()
             except:
                 raise ValueError(
                     f'Unable to retrieve JSON content from {self._endpoint}'
