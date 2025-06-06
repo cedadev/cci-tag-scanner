@@ -9,7 +9,7 @@ __copyright__ = 'Copyright 2024 United Kingdom Research and Innovation'
 __license__ = 'BSD - see LICENSE file in top-level package directory'
 __contact__ = 'daniel.westwood@stfc.ac.uk'
 
-from elasticsearch import Elasticsearch
+from cci_tag_scanner.elasticsearch import ElasticsearchMH
 from configparser import ConfigParser
 import argparse
 import os
@@ -47,7 +47,7 @@ class Dataset:
         # Updated conf for multiple hosts
         hosts = conf.get('elasticsearch', 'hosts')
         self.files_index = conf.get('elasticsearch', 'files_index')
-        self.es = Elasticsearch(hosts=hosts, verify_certs=False)
+        self.es = ElasticsearchMH(hosts=hosts, verify_certs=False)
         self.opensearch_fields = {}
         self.total_files = 0
         self.files_without_drs = 0
@@ -122,7 +122,7 @@ def main():
     env.lstrip_blocks = True
 
     # Setup elasticsearch connection
-    es = Elasticsearch(hosts=hosts, verify_certs=False)
+    es = ElasticsearchMH(hosts=hosts, verify_certs=False)
 
     # Get list of all ECVs
     query = {

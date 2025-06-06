@@ -1,0 +1,1 @@
+from .multihost import ElasticsearchMH
