@@ -22,7 +22,7 @@ SENSOR = 'sensor'
 PROJECT = 'project'
 
 # Level 2 data is mapped to satellite orbit frequency
-LEVEL_2_FREQUENCY = 'http://vocab.ceda.ac.uk/collection/cci/freq/freq_sat_orb'
+LEVEL_2_FREQUENCY = 'https://vocab.ceda.ac.uk/collection/cci/freq/freq_sat_orb'
 
 # List of allowed netcdf attributes
 ALLOWED_GLOBAL_ATTRS = [FREQUENCY, INSTITUTION, PLATFORM, SENSOR]
