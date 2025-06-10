@@ -417,6 +417,9 @@ class Dataset(object):
         # any work yet.
         all_files = path.glob('**/*')
 
+        if path.is_file():
+            return [path]
+
         if max_file_count > 0:
             # Only want a small number of netcdf files for testing
             all_netcdf = path.glob('**/*.nc')
@@ -684,8 +687,11 @@ class Dataset(object):
         # Convert file from pathlib to posix string
         file = file.as_posix()
 
+        logger.debug(f'DRS TAGS: {tags}')
         labels = self._facets.process_bag(tags)
+        logger.debug(f'LABELS: {labels}')
         drs_labels = self.get_drs_labels(labels)
+        logger.debug(f"DRS LABELS: {drs_labels}")
         ds_id = self.generate_ds_id(drs_labels, file)
 
         # Create a value where the DRS cannot be created
