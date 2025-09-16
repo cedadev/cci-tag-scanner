@@ -18,6 +18,7 @@ from jinja2 import Environment, PackageLoader
 from pathlib import Path
 from tqdm import tqdm
 
+from cci_tag_scanner.utils.elasticsearch import es_connection_kwargs
 
 class Dataset:
     FIELDS = [
@@ -47,7 +48,7 @@ class Dataset:
         # Updated conf for multiple hosts
         hosts = conf.get('elasticsearch', 'hosts')
         self.files_index = conf.get('elasticsearch', 'files_index')
-        self.es = Elasticsearch(hosts=hosts, verify_certs=False)
+        self.es = Elasticsearch(es_connection_kwargs(hosts=hosts, verify_certs=False))
         self.opensearch_fields = {}
         self.total_files = 0
         self.files_without_drs = 0
@@ -122,7 +123,7 @@ def main():
     env.lstrip_blocks = True
 
     # Setup elasticsearch connection
-    es = Elasticsearch(hosts=hosts, verify_certs=False)
+    es = Elasticsearch(es_connection_kwargs(hosts=hosts, api_key=None, verify_certs=False))
 
     # Get list of all ECVs
     query = {
