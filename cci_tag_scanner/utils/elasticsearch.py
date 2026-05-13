@@ -15,18 +15,12 @@ def es_connection_kwargs(hosts, api_key, **kwargs):
     if isinstance(hosts, list):
         hosts = hosts[0]
 
-    if hosts == 'https://elasticsearch.ceda.ac.uk':
-        return {
-            'hosts': [hosts],
-            'headers':{'x-api-key':api_key},
-            **kwargs
-        }
-    else:
-        return {
-            'hosts':[hosts],
-            'api_key':api_key,
-            **kwargs
-        }
+    # All APIs for Elasticsearch should now work with this method
+    return {
+        'hosts':[hosts],
+        'api_key':api_key,
+        **kwargs
+    }
     
 class ElasticsearchConnection:
     """
