@@ -1,5 +1,7 @@
 # CCI Tagger
 
+NOTE: This repository has been superceded and has been scheduled for archival. Please see the repository at https://github.com/cedadev/facet-scanner/tree/main
+
 ![Static Badge](https://img.shields.io/badge/cci%20tagger%20workflow-8AD6F6)
 ![Current Git Release](https://img.shields.io/github/v/release/cedadev/cci-tag-scanner)
 [![PyPI version](https://badge.fury.io/py/cci-tag-scanner.svg)](https://pypi.python.org/pypi/cci-tag-scanner/)
